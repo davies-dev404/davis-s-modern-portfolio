@@ -7,7 +7,8 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { SkillBar } from "@/components/SkillBar";
 import { skills, techStack } from "@/data/skills";
 import profileAvatar from "@/assets/profile.jpg"; // updated profile image
-import cvFile from "@/assets/DAVIS_KIBET_RESUME_UPDATED.pdf"; // CV import
+import cvFile from "@/assets/DAVIS_KIBET_RESUME_updated.pdf";
+
 
 export default function About() {
   const containerRef = useRef<HTMLDivElement>(null);
