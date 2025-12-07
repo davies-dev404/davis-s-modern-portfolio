@@ -7,11 +7,11 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { SkillBar } from "@/components/SkillBar";
 import { skills, techStack } from "@/data/skills";
 
-// ✅ Move PDF to public/assets for Vercel
+// ✅ Keep CV in public/assets for Vercel
 const cvFile = "/assets/DAVIS_KIBET_RESUME_updated.pdf";
 
-// Optional: move profile image to public for consistency
-const profileAvatar = "/assets/profile.jpg";
+// ✅ Original profile image import from src/assets
+import profileAvatar from "/assets/profile.jpg";
 
 export default function About() {
   const containerRef = useRef<HTMLDivElement>(null);
