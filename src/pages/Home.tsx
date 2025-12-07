@@ -9,7 +9,6 @@ import { ServiceCard } from "@/components/ServiceCard";
 import { SectionHeading } from "@/components/SectionHeading";
 import { projects } from "@/data/projects";
 import { services } from "@/data/services";
-import cvFile from "@/assets/DAVIS_KIBET_RESUME_updated.pdf";
 
 export default function Home() {
   const featuredProjects = projects.filter((p) => p.featured).slice(0, 3);
@@ -23,6 +22,9 @@ export default function Home() {
 
   const heroY = useTransform(scrollYProgress, [0, 1], [0, 150]);
   const heroOpacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+
+  // ✅ PDF file path from public folder
+  const cvFile = "/assets/DAVIS_KIBET_RESUME_updated.pdf";
 
   return (
     <Layout>
@@ -117,6 +119,7 @@ export default function Home() {
                 </Button>
               </motion.div>
 
+              {/* ✅ Fixed CV download */}
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button variant="hero" size="lg" asChild>
                   <a href={cvFile} download="Davis_Kibet_CV.pdf">
@@ -232,7 +235,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* CTA Section */}
       <section className="py-24 hero-gradient relative overflow-hidden">
         <motion.div 
           className="absolute inset-0 opacity-30"
@@ -286,11 +289,9 @@ export default function Home() {
                 </Button>
               </motion.div>
             </motion.div>
-
           </motion.div>
         </div>
       </section>
-
     </Layout>
   );
 }

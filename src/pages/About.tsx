@@ -6,9 +6,12 @@ import { Layout } from "@/components/Layout";
 import { SectionHeading } from "@/components/SectionHeading";
 import { SkillBar } from "@/components/SkillBar";
 import { skills, techStack } from "@/data/skills";
-import profileAvatar from "@/assets/profile.jpg"; // updated profile image
-import cvFile from "@/assets/DAVIS_KIBET_RESUME_updated.pdf";
 
+// ✅ Move PDF to public/assets for Vercel
+const cvFile = "/assets/DAVIS_KIBET_RESUME_updated.pdf";
+
+// Optional: move profile image to public for consistency
+const profileAvatar = "/assets/profile.jpg";
 
 export default function About() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -26,6 +29,7 @@ export default function About() {
       <section className="py-24 hero-gradient" ref={containerRef}>
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
             {/* Image */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
