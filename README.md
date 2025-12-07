@@ -84,4 +84,4 @@ Run the development server:
 
 Copy code
 npm run dev
-Open http://localhost:5173 to view it in the browser.
+Open http://localhost:8080 to view it in the browser.
