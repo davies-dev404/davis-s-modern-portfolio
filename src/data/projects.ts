@@ -21,7 +21,7 @@ export const projects: Project[] = [
     demo: "https://tourmaline-phoenix-9d7f4e.netlify.app/",
     featured: true,
   },
-   {
+  {
     id: 2,
     title: "FoodShare App",
     description:
@@ -108,5 +108,18 @@ export const projects: Project[] = [
     github: "https://github.com/quan0790/Clean_Swift",
     demo: "https://quan0790.github.io/Clean_Swift/",
     featured: false,
+  },
+
+  // ➕ Your New Project (ID 10)
+  {
+    id: 10,
+    title: "Liquor Store MIS",
+    description:
+      "A complete Liquor Store Management Information System (MIS) with inventory tracking, supplier management, sales processing, reporting dashboards, and authentication.",
+    image: "/assets/liqour.png",
+    stack: ["React", "Node.js", "Express", "MongoDB"],
+    github: "https://github.com/quan0790/liquortrack-pro-main",
+    demo: "",
+    featured: true,
   },
 ];
