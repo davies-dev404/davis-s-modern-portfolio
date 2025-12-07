@@ -9,6 +9,7 @@ import { ServiceCard } from "@/components/ServiceCard";
 import { SectionHeading } from "@/components/SectionHeading";
 import { projects } from "@/data/projects";
 import { services } from "@/data/services";
+import cvFile from "@/assets/DAVIS_KIBET_RESUME_updated.pdf";
 
 export default function Home() {
   const featuredProjects = projects.filter((p) => p.featured).slice(0, 3);
