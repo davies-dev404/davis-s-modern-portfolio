@@ -118,8 +118,8 @@ export default function Home() {
               </motion.div>
 
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Button variant="glass" size="xl" asChild className="btn-magnetic">
-                  <a href="/cv.pdf" download>
+                <Button variant="hero" size="lg" asChild>
+                  <a href={cvFile} download="Davis_Kibet_CV.pdf">
                     <Download className="h-5 w-5" />
                     Download CV
                   </a>
