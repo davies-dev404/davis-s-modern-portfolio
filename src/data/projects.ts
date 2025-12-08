@@ -91,7 +91,7 @@ export const projects: Project[] = [
   },
   {
     id: 8,
-    title: "Rica – Finance Tool",
+    title: "Rica – Hotel Management App",
     description:
       "A personal finance management app for tracking transactions, budgeting, and account history.",
     image: "/assets/rica.png",
