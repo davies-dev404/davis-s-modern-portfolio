@@ -64,7 +64,7 @@ export const projects: Project[] = [
     image: "/assets/gulfstream.png",
     stack: ["React", "Node.js", "Express", "MongoDB"],
     github: "https://github.com/quan0790/Gulfstream_",
-    demo: "https://quan0790.github.io/Gulfstream_/",
+    demo: "https://davies-dev404.github.io/Gulfstream_/",
     featured: true,
   },
   {
@@ -86,7 +86,7 @@ export const projects: Project[] = [
     image: "/assets/law.png",
     stack: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/quan0790/Law-Firm",
-    demo: "https://quan0790.github.io/Law-Firm_/",
+    demo: "https://davies-dev404.github.io/Law-Firm_/",
     featured: false,
   },
   {
@@ -97,7 +97,7 @@ export const projects: Project[] = [
     image: "/assets/rica.png",
     stack: ["JavaScript", "HTML", "CSS"],
     github: "https://github.com/quan0790/Rica_",
-    demo: "https://quan0790.github.io/Rica_/",
+    demo: "https://davies-dev404.github.io/Rica_/",
     featured: false,
   },
   {
@@ -108,7 +108,7 @@ export const projects: Project[] = [
     image: "/assets/clean.png",
     stack: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/quan0790/Clean_Swift",
-    demo: "https://quan0790.github.io/Clean_Swift/",
+    demo: "https://davies-dev404.github.io/Clean_Swift/",
     featured: false,
   },
   {
