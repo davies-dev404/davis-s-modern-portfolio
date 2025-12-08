@@ -1,4 +1,6 @@
-interface Project {
+// src/data/projects.ts
+
+export interface Project {
   id: number;
   title: string;
   description: string;
@@ -28,7 +30,7 @@ export const projects: Project[] = [
       "A community donation app helping users share excess food with nearby recipients and organizations.",
     image: "/assets/Jirani.png",
     stack: ["React", "Node.js", "Express", "MongoDB"],
-    github: "https://github.com/quan0790/Foodshare",
+    github: "https://github.com/quan0790/Jirani_Eats",
     demo: "https://jirani-eats-five.vercel.app/",
     featured: true,
   },
@@ -50,8 +52,8 @@ export const projects: Project[] = [
       "A personal portfolio website showcasing my projects, skills, and professional experience.",
     image: "/assets/portfolio.png",
     stack: ["React", "Node.js", "Express"],
-    github: "https://github.com/quan0790/The_Residence_",
-    demo: "",
+    github: "https://github.com/quan0790/davis-s-modern-portfolio",
+    demo: "https://davis-s-modern-portfolio-frmw.vercel.app/",
     featured: false,
   },
   {
@@ -109,8 +111,6 @@ export const projects: Project[] = [
     demo: "https://quan0790.github.io/Clean_Swift/",
     featured: false,
   },
-
-  // ➕ Your New Project (ID 10)
   {
     id: 10,
     title: "Liquor Store MIS",
