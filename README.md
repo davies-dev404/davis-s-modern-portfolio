@@ -30,7 +30,7 @@ Here are some of the projects featured in this portfolio:
 - **My Profile Portfolio**  
   Rental management platform for properties, tenants, invoices, and digital payments.  
   Stack: React, Node.js, Express, MongoDB  
-  [GitHub Repository](https://github.com/quan0790/The_Residence_)
+  [GitHub Repository](https://github.com/davies-dev404/The_Residence_)
 
 - Other projects include e-commerce platforms, solar management systems, and more (details inside the portfolio).
 
@@ -48,10 +48,8 @@ You can download my CV here:
 
 - **Email:** kipsoikibet2@gmail.com
 - **Phone:** +254790264792
-- **GitHub:** [https://github.com/quan0790](https://github.com/quan0790)
--
-
----
+- **GitHub:** [https://github.com/davies-dev404](https://github.com/davies-dev404)
+- ***
 
 ## ⚡ Features
 
@@ -68,7 +66,7 @@ You can download my CV here:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/quan0790/davis-s-modern-portfolio.git
+   git clone https://github.com/davies-dev404/davis-s-modern-portfolio.git
    Navigate to the project directory:
    ```
 

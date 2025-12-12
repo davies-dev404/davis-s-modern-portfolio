@@ -57,7 +57,7 @@ export function Navbar() {
           <div className="flex items-center gap-2">
             <div className="hidden md:flex items-center gap-1">
               <Button variant="ghost" size="icon" asChild>
-                <a href="https://github.com/quan0790" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/davies-dev404" target="_blank" rel="noopener noreferrer">
                   <Github className="h-4 w-4" />
                 </a>
               </Button>
