@@ -27,12 +27,12 @@ export const projects = [
   },
   {
     id: 3,
-    title: "The Residence – Rental Management System",
+    title: "Dwellio– Rental Management System",
     description:
       "Rental management platform for properties, tenants, invoices, and digital payments.",
-    image: "/assets/residence.png",
+    image: "/assets/rental man.png",
     stack: ["React", "Node.js", "Express", "MongoDB"],
-    github: "https://github.com/davies-dev404/The_Residence_",
+    github: "https://github.com/davies-dev404/rent_manager",
     demo: "",
     featured: false,
   },
