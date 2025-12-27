@@ -11,7 +11,7 @@ import { skills, techStack } from "@/data/skills";
 const cvFile = "/assets/DAVIS_KIBET_RESUME_updated.pdf";
 
 // ✅ Original profile image import from src/assets
-import profileAvatar from "/assets/Profile.jpeg";
+import profileAvatar from "/assets/kibetprofess.png";
 
 export default function About() {
   const containerRef = useRef(null);
