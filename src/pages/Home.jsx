@@ -87,7 +87,7 @@ export default function Home() {
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                Davis Kibet.Eng
+                Davis Kibet
               </motion.span>
               <br />
               <span className="text-foreground">Full Stack MERN Developer</span>
