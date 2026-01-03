@@ -107,7 +107,7 @@ export const projects = [
   {
     "id": 8,
     "title": "Velvet Motion",
-    "description": "No description available.",
+    "description": "A fluid and interactive website showcasing smooth animations and modern design principles.",
     "image": "/assets/placeholder-project.png",
     "stack": [
       "HTML",
@@ -121,7 +121,7 @@ export const projects = [
   {
     "id": 9,
     "title": "Rental Manager",
-    "description": "No description available.",
+    "description": "A property management tool for landlords to track tenants, rent payments, and maintenance requests.",
     "image": "/assets/rental man.png",
     "stack": [
       "HTML",
@@ -135,7 +135,7 @@ export const projects = [
   {
     "id": 10,
     "title": "Eco Track",
-    "description": "No description available.",
+    "description": "An environmental impact tracking application encouraging users to monitor and reduce their carbon footprint.",
     "image": "/assets/placeholder-project.png",
     "stack": [
       "HTML",
@@ -149,11 +149,12 @@ export const projects = [
   {
     "id": 11,
     "title": "JengaWeb",
-    "description": "No description available.",
+    "description": "A digital showcase platform highlighting web development services and custom design solutions.",
     "image": "/assets/placeholder-project.png",
     "stack": [
       "HTML",
-      "CSS"
+      "CSS",
+      "JavaScript"
     ],
     "github": "https://github.com/davies-dev404/JengaWeb",
     "demo": "",
@@ -162,7 +163,7 @@ export const projects = [
   {
     "id": 12,
     "title": "Foodshare",
-    "description": "No description available.",
+    "description": "A streamlined web platform connecting food donors with local communities to reduce waste and fight hunger.",
     "image": "/assets/placeholder-project.png",
     "stack": [
       "HTML",
@@ -175,12 +176,13 @@ export const projects = [
   },
   {
     "id": 13,
-    "title": "Law Firm ",
-    "description": "No description available.",
+    "title": "Law Firm",
+    "description": "A professional website template for legal practices, featuring service areas, attorney profiles, and contact forms.",
     "image": "/assets/law.png",
     "stack": [
       "HTML",
-      "CSS"
+      "CSS",
+      "JavaScript"
     ],
     "github": "https://github.com/davies-dev404/Law-Firm_",
     "demo": "",
@@ -203,11 +205,12 @@ export const projects = [
   {
     "id": 15,
     "title": "Fruit Juice",
-    "description": "No description available.",
+    "description": "A vibrant and colorful landing page designed for a fresh fruit juice brand.",
     "image": "/assets/placeholder-project.png",
     "stack": [
       "HTML",
-      "CSS"
+      "CSS",
+      "JavaScript"
     ],
     "github": "https://github.com/davies-dev404/fruit_juice",
     "demo": "",
@@ -216,7 +219,7 @@ export const projects = [
   {
     "id": 16,
     "title": "Fit Core",
-    "description": "No description available.",
+    "description": "A fitness center website featuring class schedules, trainer bios, and membership information.",
     "image": "/assets/placeholder-project.png",
     "stack": [
       "HTML",
@@ -230,7 +233,7 @@ export const projects = [
   {
     "id": 17,
     "title": "Davis Portfolio",
-    "description": "No description available.",
+    "description": "An earlier iteration of my personal portfolio website demonstrating my growth as a developer.",
     "image": "/assets/placeholder-project.png",
     "stack": [
       "HTML",
@@ -244,7 +247,7 @@ export const projects = [
   {
     "id": 18,
     "title": "Photography2",
-    "description": "No description available.",
+    "description": "A sleek photography portfolio gallery designed to showcase visual work with a minimalist aesthetic.",
     "image": "/assets/placeholder-project.png",
     "stack": [
       "HTML",
@@ -258,7 +261,7 @@ export const projects = [
   {
     "id": 19,
     "title": "Photography",
-    "description": "No description available.",
+    "description": "A clean and responsive photo gallery website for displaying creative photography collections.",
     "image": "/assets/placeholder-project.png",
     "stack": [
       "HTML",
@@ -272,11 +275,12 @@ export const projects = [
   {
     "id": 20,
     "title": "Thrift",
-    "description": "No description available.",
+    "description": "An online thrift store interface enabling users to browse and purchase sustainable pre-loved clothing.",
     "image": "/assets/placeholder-project.png",
     "stack": [
       "HTML",
-      "CSS"
+      "CSS",
+      "JavaScript"
     ],
     "github": "https://github.com/davies-dev404/thrift",
     "demo": "",
@@ -285,7 +289,7 @@ export const projects = [
   {
     "id": 21,
     "title": "Quan0790",
-    "description": "Config files for my GitHub profile.",
+    "description": "Config files and documentation for my GitHub profile.",
     "image": "/assets/placeholder-project.png",
     "stack": [
       "Config"
