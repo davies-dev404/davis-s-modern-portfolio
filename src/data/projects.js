@@ -3,7 +3,7 @@
 
 export const projects = [
   {
-    "id": 1,
+    "id": 4,
     "title": "FoodShare App",
     "description": "A community donation app helping users share excess food with nearby recipients and organizations.",
     "image": "/assets/Jirani.png",
@@ -18,7 +18,7 @@ export const projects = [
     "featured": true
   },
   {
-    "id": 2,
+    "id": 6,
     "title": "E-Commerce Platform",
     "description": "A full-stack e-commerce solution with real-time inventory, payment processing, and admin dashboard.",
     "image": "/assets/ecom.png",
@@ -32,7 +32,7 @@ export const projects = [
     "featured": true
   },
   {
-    "id": 3,
+    "id": 7,
     "title": "Liquor Store MIS",
     "description": "A complete Liquor Store Management Information System (MIS) with inventory tracking, supplier management, sales processing, reporting dashboards, and authentication.",
     "image": "/assets/liqour.png",
@@ -47,7 +47,7 @@ export const projects = [
     "featured": true
   },
   {
-    "id": 4,
+    "id": 10,
     "title": "Solar Impact",
     "description": "Solar energy monitoring dashboard with device tracking, energy analytics, and reporting.",
     "image": "/assets/solar.png",
@@ -62,7 +62,7 @@ export const projects = [
     "featured": true
   },
   {
-    "id": 5,
+    "id": 14,
     "title": "Gulfstream – E-Recycle App",
     "description": "Electronic waste recycling app enabling users to schedule pickups and track disposal progress.",
     "image": "/assets/gulfstream.png",
@@ -77,21 +77,7 @@ export const projects = [
     "featured": true
   },
   {
-    "id": 6,
-    "title": "Cleaning Services Website",
-    "description": "A modern cleaning services website with service listings, pricing, contact, and booking features.",
-    "image": "/assets/clean.png",
-    "stack": [
-      "HTML",
-      "CSS",
-      "JavaScript"
-    ],
-    "github": "https://github.com/davies-dev404/Clean_Swift",
-    "demo": "",
-    "featured": false
-  },
-  {
-    "id": 7,
+    "id": 1,
     "title": "My Personal Portfolio",
     "description": "A personal portfolio website showcasing my projects, skills, and professional experience.",
     "image": "/assets/portfolio.png",
@@ -105,13 +91,11 @@ export const projects = [
     "featured": false
   },
   {
-    "id": 8,
+    "id": 2,
     "title": "Velvet Motion",
-    "description": "A fluid and interactive website showcasing smooth animations and modern design principles.",
+    "description": "No description available.",
     "image": "/assets/placeholder-project.png",
     "stack": [
-      "HTML",
-      "CSS",
       "JavaScript"
     ],
     "github": "https://github.com/davies-dev404/velvet-motion",
@@ -119,13 +103,11 @@ export const projects = [
     "featured": false
   },
   {
-    "id": 9,
+    "id": 3,
     "title": "Rental Manager",
-    "description": "A property management tool for landlords to track tenants, rent payments, and maintenance requests.",
-    "image": "/assets/rental man.png",
+    "description": "No description available.",
+    "image": "/assets/placeholder-project.png",
     "stack": [
-      "HTML",
-      "CSS",
       "JavaScript"
     ],
     "github": "https://github.com/davies-dev404/rental-manager",
@@ -133,13 +115,11 @@ export const projects = [
     "featured": false
   },
   {
-    "id": 10,
-    "title": "Eco Track",
-    "description": "An environmental impact tracking application encouraging users to monitor and reduce their carbon footprint.",
+    "id": 5,
+    "title": "Eco  Track",
+    "description": "No description available.",
     "image": "/assets/placeholder-project.png",
     "stack": [
-      "HTML",
-      "CSS",
       "JavaScript"
     ],
     "github": "https://github.com/davies-dev404/Eco--Track",
@@ -147,14 +127,36 @@ export const projects = [
     "featured": false
   },
   {
-    "id": 11,
-    "title": "JengaWeb",
-    "description": "A digital showcase platform highlighting web development services and custom design solutions.",
+    "id": 8,
+    "title": "Jirani Eats",
+    "description": "No description available.",
     "image": "/assets/placeholder-project.png",
     "stack": [
-      "HTML",
-      "CSS",
       "JavaScript"
+    ],
+    "github": "https://github.com/davies-dev404/jirani-eats",
+    "demo": "https://jirani-eats.vercel.app",
+    "featured": false
+  },
+  {
+    "id": 9,
+    "title": "Jirani Eats ",
+    "description": "No description available.",
+    "image": "/assets/placeholder-project.png",
+    "stack": [
+      "JavaScript"
+    ],
+    "github": "https://github.com/davies-dev404/jirani-eats-",
+    "demo": "https://jirani-eats.vercel.app",
+    "featured": false
+  },
+  {
+    "id": 11,
+    "title": "JengaWeb",
+    "description": "No description available.",
+    "image": "/assets/placeholder-project.png",
+    "stack": [
+      "HTML"
     ],
     "github": "https://github.com/davies-dev404/JengaWeb",
     "demo": "",
@@ -162,20 +164,30 @@ export const projects = [
   },
   {
     "id": 12,
-    "title": "Law Firm",
-    "description": "A professional website template for legal practices, featuring service areas, attorney profiles, and contact forms.",
-    "image": "/assets/law.png",
+    "title": "Foodshare",
+    "description": "No description available.",
+    "image": "/assets/placeholder-project.png",
     "stack": [
-      "HTML",
-      "CSS",
       "JavaScript"
+    ],
+    "github": "https://github.com/davies-dev404/Foodshare",
+    "demo": "",
+    "featured": false
+  },
+  {
+    "id": 13,
+    "title": "Law Firm ",
+    "description": "No description available.",
+    "image": "/assets/placeholder-project.png",
+    "stack": [
+      "HTML"
     ],
     "github": "https://github.com/davies-dev404/Law-Firm_",
     "demo": "",
     "featured": false
   },
   {
-    "id": 13,
+    "id": 15,
     "title": "Rica – Hotel Management App",
     "description": "A hotel management application for booking, room service, and guest management.",
     "image": "/assets/rica.png",
@@ -189,59 +201,269 @@ export const projects = [
     "featured": false
   },
   {
-    "id": 14,
+    "id": 16,
     "title": "Fruit Juice",
-    "description": "A vibrant and colorful landing page designed for a fresh fruit juice brand.",
+    "description": "No description available.",
     "image": "/assets/placeholder-project.png",
     "stack": [
-      "HTML",
-      "CSS",
-      "JavaScript"
+      "HTML"
     ],
     "github": "https://github.com/davies-dev404/fruit_juice",
     "demo": "",
     "featured": false
   },
   {
-    "id": 15,
-    "title": "Fit Core",
-    "description": "A fitness center website featuring class schedules, trainer bios, and membership information.",
+    "id": 17,
+    "title": "Database Wk 7",
+    "description": "No description available.",
     "image": "/assets/placeholder-project.png",
     "stack": [
-      "HTML",
-      "CSS",
-      "JavaScript"
+      "code"
+    ],
+    "github": "https://github.com/davies-dev404/database-wk-7",
+    "demo": "",
+    "featured": false
+  },
+  {
+    "id": 18,
+    "title": "Ewaste Project Updated",
+    "description": "No description available.",
+    "image": "/assets/placeholder-project.png",
+    "stack": [
+      "Python"
+    ],
+    "github": "https://github.com/davies-dev404/ewaste_project_updated",
+    "demo": "",
+    "featured": false
+  },
+  {
+    "id": 19,
+    "title": "Frameworks Assignment",
+    "description": "No description available.",
+    "image": "/assets/placeholder-project.png",
+    "stack": [
+      "code"
+    ],
+    "github": "https://github.com/davies-dev404/Frameworks_Assignment",
+    "demo": "",
+    "featured": false
+  },
+  {
+    "id": 20,
+    "title": "Fit Core",
+    "description": "No description available.",
+    "image": "/assets/placeholder-project.png",
+    "stack": [
+      "CSS"
     ],
     "github": "https://github.com/davies-dev404/fit_core",
     "demo": "",
     "featured": false
   },
   {
-    "id": 16,
-    "title": "Davis Portfolio",
-    "description": "An earlier iteration of my personal portfolio website demonstrating my growth as a developer.",
+    "id": 21,
+    "title": "Greenstream Solutions",
+    "description": "No description available.",
     "image": "/assets/placeholder-project.png",
+    "stack": [
+      "HTML"
+    ],
+    "github": "https://github.com/davies-dev404/Greenstream_solutions",
+    "demo": "",
+    "featured": false
+  },
+  {
+    "id": 22,
+    "title": "Analyzing Data With Pandas And Visualizing Results With Matplotli",
+    "description": "No description available.",
+    "image": "/assets/placeholder-project.png",
+    "stack": [
+      "Jupyter Notebook"
+    ],
+    "github": "https://github.com/davies-dev404/Analyzing-Data-with-Pandas-and-Visualizing-Results-with-Matplotli",
+    "demo": "",
+    "featured": false
+  },
+  {
+    "id": 23,
+    "title": "Cleaning Services Website",
+    "description": "A modern cleaning services website with service listings, pricing, contact, and booking features.",
+    "image": "/assets/clean.png",
     "stack": [
       "HTML",
       "CSS",
       "JavaScript"
+    ],
+    "github": "https://github.com/davies-dev404/Clean_Swift",
+    "demo": "",
+    "featured": false
+  },
+  {
+    "id": 24,
+    "title": "Shinny Clean",
+    "description": "No description available.",
+    "image": "/assets/placeholder-project.png",
+    "stack": [
+      "HTML"
+    ],
+    "github": "https://github.com/davies-dev404/shinny_clean",
+    "demo": "",
+    "featured": false
+  },
+  {
+    "id": 25,
+    "title": "Shiny Clean",
+    "description": "No description available.",
+    "image": "/assets/placeholder-project.png",
+    "stack": [
+      "code"
+    ],
+    "github": "https://github.com/davies-dev404/shiny_clean",
+    "demo": "",
+    "featured": false
+  },
+  {
+    "id": 26,
+    "title": "Analyzing Data With Pandas And Visualizing Results With Matplotlib",
+    "description": "No description available.",
+    "image": "/assets/placeholder-project.png",
+    "stack": [
+      "Jupyter Notebook"
+    ],
+    "github": "https://github.com/davies-dev404/Analyzing-Data-with-Pandas-and-Visualizing-Results-with-Matplotlib",
+    "demo": "",
+    "featured": false
+  },
+  {
+    "id": 27,
+    "title": "Cleaning Servicess",
+    "description": "No description available.",
+    "image": "/assets/placeholder-project.png",
+    "stack": [
+      "HTML"
+    ],
+    "github": "https://github.com/davies-dev404/cleaning_servicess",
+    "demo": "",
+    "featured": false
+  },
+  {
+    "id": 28,
+    "title": "Cleaning Services",
+    "description": "No description available.",
+    "image": "/assets/placeholder-project.png",
+    "stack": [
+      "code"
+    ],
+    "github": "https://github.com/davies-dev404/cleaning_services",
+    "demo": "",
+    "featured": false
+  },
+  {
+    "id": 29,
+    "title": "File Handling And Exception Handling Assignment",
+    "description": "No description available.",
+    "image": "/assets/placeholder-project.png",
+    "stack": [
+      "Python"
+    ],
+    "github": "https://github.com/davies-dev404/File-Handling-and-Exception-Handling-Assignment",
+    "demo": "",
+    "featured": false
+  },
+  {
+    "id": 30,
+    "title": "Calculate Discount",
+    "description": "No description available.",
+    "image": "/assets/placeholder-project.png",
+    "stack": [
+      "Python"
+    ],
+    "github": "https://github.com/davies-dev404/calculate-discount",
+    "demo": "",
+    "featured": false
+  },
+  {
+    "id": 31,
+    "title": "List Operations.Py",
+    "description": "No description available.",
+    "image": "/assets/placeholder-project.png",
+    "stack": [
+      "Python"
+    ],
+    "github": "https://github.com/davies-dev404/list_operations.py",
+    "demo": "",
+    "featured": false
+  },
+  {
+    "id": 32,
+    "title": "Davis Portfolio",
+    "description": "No description available.",
+    "image": "/assets/placeholder-project.png",
+    "stack": [
+      "HTML"
     ],
     "github": "https://github.com/davies-dev404/davis-portfolio",
     "demo": "https://github.com/quan0790/davis-portfolio",
     "featured": false
   },
   {
-    "id": 17,
-    "title": "Photography",
-    "description": "A clean and responsive photo gallery website for displaying creative photography collections.",
+    "id": 33,
+    "title": "Basic Calculator Program ",
+    "description": "No description available.",
     "image": "/assets/placeholder-project.png",
     "stack": [
-      "HTML",
-      "CSS",
-      "JavaScript"
+      "Python"
+    ],
+    "github": "https://github.com/davies-dev404/Basic-Calculator-program-",
+    "demo": "",
+    "featured": false
+  },
+  {
+    "id": 34,
+    "title": "Photography2",
+    "description": "No description available.",
+    "image": "/assets/placeholder-project.png",
+    "stack": [
+      "code"
+    ],
+    "github": "https://github.com/davies-dev404/photography2",
+    "demo": "",
+    "featured": false
+  },
+  {
+    "id": 35,
+    "title": "Photography",
+    "description": "No description available.",
+    "image": "/assets/placeholder-project.png",
+    "stack": [
+      "code"
     ],
     "github": "https://github.com/davies-dev404/photography",
     "demo": "",
+    "featured": false
+  },
+  {
+    "id": 36,
+    "title": "Thrift",
+    "description": "No description available.",
+    "image": "/assets/placeholder-project.png",
+    "stack": [
+      "HTML"
+    ],
+    "github": "https://github.com/davies-dev404/thrift",
+    "demo": "",
+    "featured": false
+  },
+  {
+    "id": 37,
+    "title": "Quan0790",
+    "description": "Config files for my GitHub profile.",
+    "image": "/assets/placeholder-project.png",
+    "stack": [
+      "code"
+    ],
+    "github": "https://github.com/davies-dev404/quan0790",
+    "demo": "https://github.com/quan0790",
     "featured": false
   }
 ];
