@@ -162,20 +162,6 @@ export const projects = [
   },
   {
     "id": 12,
-    "title": "Foodshare",
-    "description": "A streamlined web platform connecting food donors with local communities to reduce waste and fight hunger.",
-    "image": "/assets/placeholder-project.png",
-    "stack": [
-      "HTML",
-      "CSS",
-      "JavaScript"
-    ],
-    "github": "https://github.com/davies-dev404/Foodshare",
-    "demo": "",
-    "featured": false
-  },
-  {
-    "id": 13,
     "title": "Law Firm",
     "description": "A professional website template for legal practices, featuring service areas, attorney profiles, and contact forms.",
     "image": "/assets/law.png",
@@ -189,7 +175,7 @@ export const projects = [
     "featured": false
   },
   {
-    "id": 14,
+    "id": 13,
     "title": "Rica – Hotel Management App",
     "description": "A hotel management application for booking, room service, and guest management.",
     "image": "/assets/rica.png",
@@ -203,7 +189,7 @@ export const projects = [
     "featured": false
   },
   {
-    "id": 15,
+    "id": 14,
     "title": "Fruit Juice",
     "description": "A vibrant and colorful landing page designed for a fresh fruit juice brand.",
     "image": "/assets/placeholder-project.png",
@@ -217,7 +203,7 @@ export const projects = [
     "featured": false
   },
   {
-    "id": 16,
+    "id": 15,
     "title": "Fit Core",
     "description": "A fitness center website featuring class schedules, trainer bios, and membership information.",
     "image": "/assets/placeholder-project.png",
@@ -231,7 +217,7 @@ export const projects = [
     "featured": false
   },
   {
-    "id": 17,
+    "id": 16,
     "title": "Davis Portfolio",
     "description": "An earlier iteration of my personal portfolio website demonstrating my growth as a developer.",
     "image": "/assets/placeholder-project.png",
@@ -245,21 +231,7 @@ export const projects = [
     "featured": false
   },
   {
-    "id": 18,
-    "title": "Photography2",
-    "description": "A sleek photography portfolio gallery designed to showcase visual work with a minimalist aesthetic.",
-    "image": "/assets/placeholder-project.png",
-    "stack": [
-      "HTML",
-      "CSS",
-      "JavaScript"
-    ],
-    "github": "https://github.com/davies-dev404/photography2",
-    "demo": "",
-    "featured": false
-  },
-  {
-    "id": 19,
+    "id": 17,
     "title": "Photography",
     "description": "A clean and responsive photo gallery website for displaying creative photography collections.",
     "image": "/assets/placeholder-project.png",
@@ -270,32 +242,6 @@ export const projects = [
     ],
     "github": "https://github.com/davies-dev404/photography",
     "demo": "",
-    "featured": false
-  },
-  {
-    "id": 20,
-    "title": "Thrift",
-    "description": "An online thrift store interface enabling users to browse and purchase sustainable pre-loved clothing.",
-    "image": "/assets/placeholder-project.png",
-    "stack": [
-      "HTML",
-      "CSS",
-      "JavaScript"
-    ],
-    "github": "https://github.com/davies-dev404/thrift",
-    "demo": "",
-    "featured": false
-  },
-  {
-    "id": 21,
-    "title": "Quan0790",
-    "description": "Config files and documentation for my GitHub profile.",
-    "image": "/assets/placeholder-project.png",
-    "stack": [
-      "Config"
-    ],
-    "github": "https://github.com/davies-dev404/quan0790",
-    "demo": "https://github.com/quan0790",
     "featured": false
   }
 ];

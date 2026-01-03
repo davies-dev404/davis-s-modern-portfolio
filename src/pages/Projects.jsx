@@ -6,7 +6,7 @@ import { ProjectCard } from "@/components/ProjectCard";
 import { projects } from "@/data/projects";
 import { cn } from "@/lib/utils";
 
-const categories = ["All", "React", "Node.js", "Python", "Mobile"];
+const categories = ["All", "React", "Node.js", "HTML", "CSS", "JavaScript"];
 
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState("All");
