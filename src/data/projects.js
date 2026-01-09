@@ -204,19 +204,7 @@ export const projects = [
     "demo": "https://davies-dev404.github.io/fruit_juice/",
     "featured": true
   },
-  {
-    "id": 13,
-    "title": "Community Care Portal",
-    "description": "No description available.",
-    "image": "/assets/placeholder-project.png",
-    "category": ["Frontend", "Health"],
-    "stack": [
-      "JavaScript"
-    ],
-    "github": "https://github.com/davies-dev404/community-care-portal",
-    "demo": "https://community-care-portal.vercel.app",
-    "featured": false
-  },
+ 
   {
     "id": 14,
     "title": "My Personal Portfolio",
