@@ -1,4 +1,14 @@
 {
+  "https://github.com/davies-dev404/community-care-portal": {
+    "title": "Hope Specialist Hospital",
+    "description": "A comprehensive healthcare portal providing exceptional medical services, appointment booking, and patient care resources.",
+    "image": "/assets/hope-specialist.png",
+    "category": ["Frontend", "Health"],
+    "stack": ["React", "Tailwind CSS", "Vite"],
+    "demo": "https://community-care-portal.vercel.app/",
+    "featured": true
+  },
+
   "https://github.com/davies-dev404/legal-motion-studio": {
     "image": "/assets/sterling-law.png",
     "stack": ["React", "Tailwind CSS", "Framer Motion"],
