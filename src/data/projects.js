@@ -245,6 +245,21 @@ export const projects = [
   },
   {
     "id": 14,
+    "title": "Strategic Impact",
+    "description": "No description available.",
+    "image": "/assets/placeholder-project.png",
+    "stack": [
+      "JavaScript"
+    ],
+    "category": [
+      "Web Dev"
+    ],
+    "github": "https://github.com/davies-dev404/Strategic-Impact",
+    "demo": "",
+    "featured": false
+  },
+  {
+    "id": 15,
     "title": "My Personal Portfolio",
     "description": "A personal portfolio website showcasing my projects, skills, and professional experience.",
     "image": "/assets/portfolio.png",
@@ -262,7 +277,7 @@ export const projects = [
     "featured": false
   },
   {
-    "id": 15,
+    "id": 16,
     "title": "Rica – Hotel Management App",
     "description": "A hotel management application for booking, room service, and guest management.",
     "image": "/assets/rica.png",
