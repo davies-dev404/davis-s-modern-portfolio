@@ -304,21 +304,6 @@ export const projects = [
   },
   {
     "id": 17,
-    "title": "Martin Stacy Portfolio",
-    "description": "No description available.",
-    "image": "/assets/placeholder-project.png",
-    "stack": [
-      "JavaScript"
-    ],
-    "category": [
-      "Web Dev"
-    ],
-    "github": "https://github.com/davies-dev404/martin-stacy-portfolio",
-    "demo": "https://martin-stacy-portfolio.vercel.app",
-    "featured": false
-  },
-  {
-    "id": 18,
     "title": "My Personal Portfolio",
     "description": "A personal portfolio website showcasing my projects, skills, and professional experience.",
     "image": "/assets/portfolio.png",
@@ -333,6 +318,21 @@ export const projects = [
     ],
     "github": "https://github.com/davies-dev404/davis-s-modern-portfolio",
     "demo": "https://davis-s-modern-portfolio.vercel.app",
+    "featured": false
+  },
+  {
+    "id": 18,
+    "title": "Martin Stacy Portfolio",
+    "description": "No description available.",
+    "image": "/assets/placeholder-project.png",
+    "stack": [
+      "JavaScript"
+    ],
+    "category": [
+      "Web Dev"
+    ],
+    "github": "https://github.com/davies-dev404/martin-stacy-portfolio",
+    "demo": "https://martin-stacy-portfolio.vercel.app",
     "featured": false
   },
   {
