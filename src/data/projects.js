@@ -304,6 +304,21 @@ export const projects = [
   },
   {
     "id": 17,
+    "title": "MS Ochieng Law",
+    "description": "No description available.",
+    "image": "/assets/placeholder-project.png",
+    "stack": [
+      "JavaScript"
+    ],
+    "category": [
+      "Web Dev"
+    ],
+    "github": "https://github.com/davies-dev404/MS-Ochieng-Law",
+    "demo": "",
+    "featured": false
+  },
+  {
+    "id": 18,
     "title": "My Personal Portfolio",
     "description": "A personal portfolio website showcasing my projects, skills, and professional experience.",
     "image": "/assets/portfolio.png",
@@ -321,7 +336,7 @@ export const projects = [
     "featured": false
   },
   {
-    "id": 18,
+    "id": 19,
     "title": "Martin Stacy Portfolio",
     "description": "No description available.",
     "image": "/assets/placeholder-project.png",
@@ -336,7 +351,7 @@ export const projects = [
     "featured": false
   },
   {
-    "id": 19,
+    "id": 20,
     "title": "Laundry Express",
     "description": "No description available.",
     "image": "/assets/placeholder-project.png",
@@ -351,7 +366,7 @@ export const projects = [
     "featured": false
   },
   {
-    "id": 20,
+    "id": 21,
     "title": "Rica – Hotel Management App",
     "description": "A hotel management application for booking, room service, and guest management.",
     "image": "/assets/rica.png",
@@ -369,7 +384,7 @@ export const projects = [
     "featured": false
   },
   {
-    "id": 21,
+    "id": 22,
     "title": "Cleaning Services Website",
     "description": "A modern cleaning services website with service listings, pricing, contact, and booking features.",
     "image": "/assets/clean.png",
