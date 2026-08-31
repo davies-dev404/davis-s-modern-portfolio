@@ -3,7 +3,46 @@
 
 export const projects = [
   {
+    "id": 0,
+    "title": "ECASI Africa",
+    "description": "Official website for the Environmental Capacities and Sustainability Institute — an independent Pan-African think tank advancing sustainable development through research, policy advisory, and capacity strengthening across Africa.",
+    "image": "/assets/ecasi.png",
+    "stack": [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "Framer Motion"
+    ],
+    "category": [
+      "Full Stack",
+      "Non-Profit"
+    ],
+    "github": "https://github.com/davies-dev404/ecasi_africa",
+    "demo": "https://ecasiafrica.org/",
+    "featured": true
+  },
+  {
     "id": 1,
+    "title": "MS Ochieng Law",
+    "description": "A modern, high-end legal practice platform for M. S. Ochieng Legal Advocates, featuring strategic legal consultations, expertise showcases, and interactive service charters.",
+    "image": "/assets/ms-ochieng-law.png",
+    "stack": [
+      "React",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Vite"
+    ],
+    "category": [
+      "Frontend",
+      "Legal"
+    ],
+    "github": "https://github.com/davies-dev404/MS-Ochieng-Law",
+    "demo": "https://ms-ochieng-law-1ew9.vercel.app/",
+    "featured": true
+  },
+  {
+    "id": 2,
     "title": "Kenya Property Connect",
     "description": "Kenya's premier real estate platform connecting families and investors with quality homes, land, and luxury estates across all 47 counties.",
     "image": "/assets/kenya-property-connect.png",
@@ -20,10 +59,10 @@ export const projects = [
     ],
     "github": "https://github.com/davies-dev404/kenya-property-connect",
     "demo": "https://kenya-property-connect.vercel.app/",
-    "featured": true
+    "featured": false
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "TransCorp Logistics Hub",
     "description": "A premium, high-performance logistics and transport management platform designed for the East African market.",
     "image": "/assets/transcorp-logistics.png",
@@ -43,7 +82,7 @@ export const projects = [
     "featured": true
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "Luminary Strategic Impact",
     "description": "A premier strategic communications platform designed to showcase agency mission, leadership, and service portfolio with narrative-driven design.",
     "image": "/assets/strategic-impact.png",
@@ -59,10 +98,10 @@ export const projects = [
     ],
     "github": "https://github.com/davies-dev404/Strategic-Impact",
     "demo": "https://strategic-impact.vercel.app/",
-    "featured": true
+    "featured": false
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "JengaWeb",
     "description": "A digital showcase platform highlighting web development services and custom design solutions.",
     "image": "/assets/jengaweb.png",
@@ -80,7 +119,7 @@ export const projects = [
     "featured": true
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "Hope Specialist Hospital",
     "description": "A comprehensive healthcare portal providing exceptional medical services, appointment booking, and patient care resources.",
     "image": "/assets/hope-specialist.png",
@@ -98,7 +137,7 @@ export const projects = [
     "featured": true
   },
   {
-    "id": 6,
+    "id": 7,
     "title": "EcoTrack",
     "description": "Waste management platform for a greener future. Track recycling impact, schedule pickups, and join a sustainable community.",
     "image": "/assets/eco-track-v2.png",
@@ -117,7 +156,7 @@ export const projects = [
     "featured": true
   },
   {
-    "id": 7,
+    "id": 8,
     "title": "Sterling Law",
     "description": "Premium legal practice website built with React and Tailwind CSS. A demo website for a high-end law firm featuring modern design and smooth animations.",
     "image": "/assets/sterling-law.png",
@@ -135,7 +174,7 @@ export const projects = [
     "featured": true
   },
   {
-    "id": 8,
+    "id": 9,
     "title": "Velvet Motion - Noir",
     "description": "A coffee shop experience featuring fluid animations and dark mode aesthetics. Every cup tells a story.",
     "image": "/assets/velvet-motion.png",
@@ -153,7 +192,7 @@ export const projects = [
     "featured": true
   },
   {
-    "id": 9,
+    "id": 10,
     "title": "Dwellio – Rental Management System",
     "description": "Rental management platform for properties, tenants, invoices, and digital payments.",
     "image": "/assets/rental-manager.png",
@@ -172,7 +211,7 @@ export const projects = [
     "featured": true
   },
   {
-    "id": 10,
+    "id": 11,
     "title": "FoodShare App",
     "description": "A community donation app helping users share excess food with nearby recipients and organizations.",
     "image": "/assets/Jirani.png",
@@ -191,7 +230,7 @@ export const projects = [
     "featured": true
   },
   {
-    "id": 11,
+    "id": 12,
     "title": "E-Commerce Platform",
     "description": "A full-stack e-commerce solution with real-time inventory, payment processing, and admin dashboard.",
     "image": "/assets/ecom.png",
@@ -206,25 +245,6 @@ export const projects = [
     ],
     "github": "https://github.com/davies-dev404/crotchet-atelier-online-main",
     "demo": "https://tourmaline-phoenix-9d7f4e.netlify.app/",
-    "featured": true
-  },
-  {
-    "id": 12,
-    "title": "Liquor Store MIS",
-    "description": "A complete Liquor Store Management Information System (MIS) with inventory tracking, supplier management, sales processing, reporting dashboards, and authentication.",
-    "image": "/assets/liqour.png",
-    "stack": [
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB"
-    ],
-    "category": [
-      "Full Stack",
-      "Management"
-    ],
-    "github": "https://github.com/davies-dev404/liquortrack-pro-main",
-    "demo": "",
     "featured": true
   },
   {
@@ -285,40 +305,6 @@ export const projects = [
   },
   {
     "id": 16,
-    "title": "JuiceBar",
-    "description": "A modern full-stack web application for managing juice orders.",
-    "image": "/assets/juice-bar.png",
-    "stack": [
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Tailwind CSS"
-    ],
-    "category": [
-      "Full Stack",
-      "E-commerce"
-    ],
-    "github": "https://github.com/davies-dev404/fruit_juice",
-    "demo": "",
-    "featured": true
-  },
-  {
-    "id": 17,
-    "title": "MS Ochieng Law",
-    "description": "No description available.",
-    "image": "/assets/placeholder-project.png",
-    "stack": [
-      "JavaScript"
-    ],
-    "category": [
-      "Web Dev"
-    ],
-    "github": "https://github.com/davies-dev404/MS-Ochieng-Law",
-    "demo": "",
-    "featured": false
-  },
-  {
-    "id": 18,
     "title": "My Personal Portfolio",
     "description": "A personal portfolio website showcasing my projects, skills, and professional experience.",
     "image": "/assets/portfolio.png",
@@ -333,72 +319,6 @@ export const projects = [
     ],
     "github": "https://github.com/davies-dev404/davis-s-modern-portfolio",
     "demo": "https://davis-s-modern-portfolio.vercel.app",
-    "featured": false
-  },
-  {
-    "id": 19,
-    "title": "Martin Stacy Portfolio",
-    "description": "No description available.",
-    "image": "/assets/placeholder-project.png",
-    "stack": [
-      "JavaScript"
-    ],
-    "category": [
-      "Web Dev"
-    ],
-    "github": "https://github.com/davies-dev404/martin-stacy-portfolio",
-    "demo": "https://martin-stacy-portfolio.vercel.app",
-    "featured": false
-  },
-  {
-    "id": 20,
-    "title": "Laundry Express",
-    "description": "No description available.",
-    "image": "/assets/placeholder-project.png",
-    "stack": [
-      "JavaScript"
-    ],
-    "category": [
-      "Web Dev"
-    ],
-    "github": "https://github.com/davies-dev404/laundry_Express",
-    "demo": "",
-    "featured": false
-  },
-  {
-    "id": 21,
-    "title": "Rica – Hotel Management App",
-    "description": "A hotel management application for booking, room service, and guest management.",
-    "image": "/assets/rica.png",
-    "stack": [
-      "JavaScript",
-      "HTML",
-      "CSS"
-    ],
-    "category": [
-      "Frontend",
-      "Hospitality"
-    ],
-    "github": "https://github.com/davies-dev404/Rica_",
-    "demo": "",
-    "featured": false
-  },
-  {
-    "id": 22,
-    "title": "Cleaning Services Website",
-    "description": "A modern cleaning services website with service listings, pricing, contact, and booking features.",
-    "image": "/assets/clean.png",
-    "stack": [
-      "HTML",
-      "CSS",
-      "JavaScript"
-    ],
-    "category": [
-      "Frontend",
-      "Service"
-    ],
-    "github": "https://github.com/davies-dev404/Clean_Swift",
-    "demo": "",
     "featured": false
   }
 ];

@@ -163,6 +163,24 @@
     "demo": "https://logistics-solutions-hub-fkr7.vercel.app/",
     "featured": true
   },
+  "https://github.com/davies-dev404/ecasi_africa": {
+    "title": "ECASI Africa",
+    "description": "Official website for the Environmental Capacities and Sustainability Institute — an independent Pan-African think tank advancing sustainable development through research, policy advisory, and capacity strengthening across Africa.",
+    "image": "/assets/ecasi.png",
+    "category": ["Full Stack", "Non-Profit"],
+    "stack": ["React", "Vite", "Tailwind CSS", "Shadcn UI", "Framer Motion"],
+    "demo": "https://ecasiafrica.org/",
+    "featured": true
+  },
+  "https://github.com/davies-dev404/MS-Ochieng-Law": {
+    "title": "MS Ochieng Law",
+    "description": "A modern, high-end legal practice platform for M. S. Ochieng Legal Advocates, featuring strategic legal consultations, expertise showcases, and interactive service charters.",
+    "image": "/assets/ms-ochieng-law.png",
+    "category": ["Frontend", "Legal"],
+    "stack": ["React", "Tailwind CSS", "Framer Motion", "Vite"],
+    "demo": "https://ms-ochieng-law-1ew9.vercel.app/",
+    "featured": true
+  },
   "https://github.com/davies-dev404/Strategic-Impact": {
     "title": "Luminary Strategic Impact",
     "description": "A premier strategic communications platform designed to showcase agency mission, leadership, and service portfolio with narrative-driven design.",

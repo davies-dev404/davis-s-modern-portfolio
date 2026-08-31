@@ -98,6 +98,7 @@ async function fetchProjects() {
           featured
         };
       })
+      .filter(p => p.description && p.description !== "No description available." && p.demo && p.demo.trim() !== "")
       // Sort: Featured first, then by updated date (which is already roughly the order from API, but let's be sure)
       .sort((a, b) => (b.featured === a.featured ? 0 : b.featured ? 1 : -1));
 

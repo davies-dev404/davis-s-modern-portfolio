@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowRight } from "lucide-react";
@@ -18,6 +18,16 @@ const navLinks = [
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDark, setIsDark] = useState(() => document.documentElement.classList.contains("dark"));
+
+  useEffect(() => {
+    const observer = new MutationObserver(() => {
+      setIsDark(document.documentElement.classList.contains("dark"));
+    });
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+    return () => observer.disconnect();
+  }, []);
+
   const location = useLocation();
 
   return (
@@ -25,9 +35,17 @@ export function Navbar() {
       <div className="w-full max-w-wide mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <img src="/assets/logo.png" alt="Davies.dev" className="h-12 w-auto object-contain transition-transform group-hover:scale-105" />
-            <span className="font-display font-bold text-3xl tracking-tight text-stax-black dark:text-white group-hover:text-primary transition-colors">davies.dev/&gt;</span>
+          <Link to="/" className="flex items-center group">
+            <img 
+              src="/assets/logo-light.png" 
+              alt="Davies.dev" 
+              className="h-14 md:h-16 w-auto object-contain transition-transform group-hover:scale-105 dark:hidden block" 
+            />
+            <img 
+              src="/assets/logo.png" 
+              alt="Davies.dev" 
+              className="h-14 md:h-16 w-auto object-contain transition-transform group-hover:scale-105 dark:block hidden" 
+            />
           </Link>
 
           {/* Desktop Navigation */}

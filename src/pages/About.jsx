@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion"; 
-import { Download, MapPin, GraduationCap, Film, Plane, ChefHat, Music, Book, Gamepad2 } from "lucide-react";
+import { Download, MapPin, GraduationCap, Award, Film, Plane, ChefHat, Music, Book, Gamepad2 } from "lucide-react";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/Layout";
@@ -61,24 +61,35 @@ export default function About() {
               transition={{ duration: 0.6 }}
               className="space-y-6"
             >
-              <span className="inline-block px-3 py-1 text-xs font-semibold bg-primary/10 text-primary rounded-full">
-                About Me
-              </span>
+              <div className="flex flex-wrap gap-2 items-center">
+                <span className="inline-block px-3 py-1 text-xs font-semibold bg-primary/10 text-primary rounded-full">
+                  About Me
+                </span>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 rounded-full">
+                  <Award className="h-3.5 w-3.5" />
+                  Power Learn Project Alumnus (July 2025 Cohort)
+                </span>
+              </div>
+
               <h1 className="text-4xl md:text-5xl font-bold">
                 Davis Kibet <span className="gradient-text">Kipsoi</span>
               </h1>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg font-semibold text-primary/90">
                 Software Engineer & Full-Stack Developer
               </p>
 
-              <div className="flex items-center gap-4 text-muted-foreground">
+              <div className="flex flex-col gap-2 text-sm text-muted-foreground">
                 <span className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4" />
+                  <MapPin className="h-4 w-4 text-primary shrink-0" />
                   Nairobi, Kenya
                 </span>
                 <span className="flex items-center gap-2">
-                  <GraduationCap className="h-4 w-4" />
+                  <GraduationCap className="h-4 w-4 text-primary shrink-0" />
                   BSc Information Science, Mount Kenya University
+                </span>
+                <span className="flex items-center gap-2">
+                  <Award className="h-4 w-4 text-primary shrink-0" />
+                  Power Learn Project Alumnus (July 2025 Cohort)
                 </span>
               </div>
 
