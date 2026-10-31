@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://davis-s-modern-portfolio.vercel.app/sitemap.xml
+Sitemap: https://afrinextech.co.ke/sitemap.xml

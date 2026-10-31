@@ -35,17 +35,20 @@ export function Navbar() {
       <div className="w-full max-w-wide mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
-          <Link to="/" className="flex items-center group">
+          <Link to="/" className="flex items-center gap-3 group">
             <img 
               src="/assets/logo-light.png" 
-              alt="Davies.dev" 
-              className="h-14 md:h-16 w-auto object-contain transition-transform group-hover:scale-105 dark:hidden block" 
+              alt="AfriNex Tech" 
+              className="h-12 md:h-14 w-auto object-contain transition-transform group-hover:scale-105 dark:hidden block" 
             />
             <img 
               src="/assets/logo.png" 
-              alt="Davies.dev" 
-              className="h-14 md:h-16 w-auto object-contain transition-transform group-hover:scale-105 dark:block hidden" 
+              alt="AfriNex Tech" 
+              className="h-12 md:h-14 w-auto object-contain transition-transform group-hover:scale-105 dark:block hidden" 
             />
+            <span className="font-display font-extrabold text-xl md:text-2xl text-stax-black dark:text-white tracking-tight group-hover:text-primary transition-colors">
+              AfriNex <span className="text-primary">Tech</span>
+            </span>
           </Link>
 
           {/* Desktop Navigation */}

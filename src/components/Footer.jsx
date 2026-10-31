@@ -7,7 +7,7 @@ const socialLinks = [
   { icon: Github, href: "https://github.com/davies-dev404", label: "GitHub" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/davies-kibet-342363237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", label: "LinkedIn" },
   { icon: XIcon, href: "https://x.com/Quantito1", label: "X (formerly Twitter)" },
-  { icon: Mail, href: "mailto:informjengaweb@gmail.com", label: "Email" },
+  { icon: Mail, href: "mailto:info@afrinextech.co.ke", label: "Email" },
 ];
 
 const footerLinks = [
@@ -27,17 +27,19 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="flex flex-col items-start gap-2 group">
-              <img 
-                src="/assets/logo-light.png" 
-                alt="Davies.dev" 
-                className="h-12 md:h-14 w-auto object-contain transition-transform group-hover:scale-105 dark:hidden block" 
-              />
-              <img 
-                src="/assets/logo.png" 
-                alt="Davies.dev" 
-                className="h-12 md:h-14 w-auto object-contain transition-transform group-hover:scale-105 dark:block hidden" 
-              />
-              <span className="font-display text-xl font-bold tracking-tight text-foreground group-hover:text-primary transition-colors">&lt;davies.dev/&gt;</span>
+              <div className="flex items-center gap-3">
+                <img 
+                  src="/assets/logo-light.png" 
+                  alt="AfriNex Tech" 
+                  className="h-10 md:h-12 w-auto object-contain transition-transform group-hover:scale-105 dark:hidden block" 
+                />
+                <img 
+                  src="/assets/logo.png" 
+                  alt="AfriNex Tech" 
+                  className="h-10 md:h-12 w-auto object-contain transition-transform group-hover:scale-105 dark:block hidden" 
+                />
+                <span className="font-display text-xl font-bold tracking-tight text-foreground group-hover:text-primary transition-colors">AfriNex Tech</span>
+              </div>
             </Link>
             <p className="text-muted-foreground text-sm max-w-xs">
               Building digital experiences with clean code and modern technologies.
@@ -79,11 +81,11 @@ export function Footer() {
             <h3 className="font-display font-semibold text-foreground">Get in Touch</h3>
             <div className="space-y-3">
               <a
-                href="mailto:informjengaweb@gmail.com"
+                href="mailto:info@afrinextech.co.ke"
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm"
               >
                 <Mail className="h-4 w-4" />
-                informjengaweb@gmail.com
+                info@afrinextech.co.ke
               </a>
               <a
                 href="tel:+254790264792"
@@ -107,7 +109,7 @@ export function Footer() {
 
         <div className="mt-12 pt-6 border-t border-border text-center">
           <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} Davis Kibet Kipsoi. All rights reserved.
+            © {new Date().getFullYear()} AfriNex Tech. All rights reserved.
           </p>
         </div>
       </div>

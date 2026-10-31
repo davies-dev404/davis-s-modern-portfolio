@@ -10,8 +10,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "informjengaweb@gmail.com",
-    href: "mailto:informjengaweb@gmail.com",
+    value: "info@afrinextech.co.ke",
+    href: "mailto:info@afrinextech.co.ke",
   },
   {
     icon: Phone,

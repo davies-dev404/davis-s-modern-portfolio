@@ -1,6 +1,6 @@
-# Hi, I’m Davis Kibet 👋
+# AfriNex Tech | Davis Kibet 👋
 
-![Davis Portfolio Preview](public/assets/project-preview.png)
+![AfriNex Tech Portfolio Preview](public/assets/project-preview.png)
 
 ### Full-Stack Developer (MERN Stack)
 
@@ -56,7 +56,7 @@ I enjoy working in collaborative teams, learning new technologies, and continuou
 
 ### Personal Developer Portfolio
 
-- 🔗 **Live Demo:** [https://davis-s-modern-portfolio-frmw.vercel.app/](https://davis-s-modern-portfolio-frmw.vercel.app/)
+- 🔗 **Live Demo:** [https://afrinextech.co.ke](https://afrinextech.co.ke)
 - 💻 **GitHub:** Available on request
 
 **Description:**
@@ -124,6 +124,6 @@ A modern and responsive personal portfolio built with React to showcase my proje
 
 ## 📫 Contact
 
-- **Email:** kipsoikibet2@gmail.com
+- **Email:** info@afrinextech.co.ke
 - **Phone:** +254790264792
 - **GitHub:** [https://github.com/davies-dev404](https://github.com/davies-dev404)

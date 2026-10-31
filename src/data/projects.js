@@ -305,7 +305,7 @@ export const projects = [
   },
   {
     "id": 16,
-    "title": "My Personal Portfolio",
+    "title": "AfriNex Tech - Official Website",
     "description": "A personal portfolio website showcasing my projects, skills, and professional experience.",
     "image": "/assets/portfolio.png",
     "stack": [
@@ -318,7 +318,7 @@ export const projects = [
       "Portfolio"
     ],
     "github": "https://github.com/davies-dev404/davis-s-modern-portfolio",
-    "demo": "https://davis-s-modern-portfolio.vercel.app",
+    "demo": "https://afrinextech.co.ke",
     "featured": false
   }
 ];

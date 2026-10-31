@@ -72,7 +72,7 @@ export function StaxHero() {
     { name: "GitHub", url: "https://github.com/davies-dev404", icon: Github },
     { name: "LinkedIn", url: "https://www.linkedin.com/in/davies-kibet-342363237", icon: Linkedin },
     { name: "Twitter", url: "https://x.com/Quantito1", icon: XIcon },
-    { name: "Email", url: "mailto:kipsoikibet2@gmail.com", icon: Mail },
+    { name: "Email", url: "mailto:info@afrinextech.co.ke", icon: Mail },
   ];
 
   return (

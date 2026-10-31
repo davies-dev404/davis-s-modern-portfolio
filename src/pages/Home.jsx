@@ -30,7 +30,7 @@ export default function Home() {
                 Totally <br /> Customizable
             </h2>
             <h3 className="font-sans font-normal text-2xl md:text-3xl text-stax-medium-gray dark:text-gray-300 leading-tight mb-8">
-               Modern web development just got easier with <strong className="text-stax-black dark:text-white">DAVIES.DEV</strong>
+               Modern web development just got easier with <strong className="text-stax-black dark:text-white">AFRINEX TECH</strong>
             </h3>
             <p className="font-serif text-lg text-stax-medium-gray dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
                 I provide complete control over your entire web presence. From global fonts and colors to custom headers and layouts. The possibilities are truly endless when you have a dedicated Full Stack Developer.
