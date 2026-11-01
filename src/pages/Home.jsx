@@ -173,24 +173,15 @@ export default function Home() {
                 href="https://makaziflow.afrinextech.co.ke"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 p-4 shadow-xl hover:border-white/40 transition-all group"
+                className="block group"
               >
                 <img
-                  src="/assets/rental-manager.png"
+                  src="/assets/makaziflow-hero.jpg"
                   alt="MakaziFlow Property Management SaaS by AfriNex Tech"
                   loading="lazy"
                   decoding="async"
-                  className="w-full h-64 sm:h-72 object-cover object-top rounded-xl border border-white/15 group-hover:scale-[1.01] transition-transform"
+                  className="w-full h-auto object-contain rounded-2xl shadow-2xl group-hover:scale-[1.02] transition-transform duration-300"
                 />
-                <div className="mt-4 flex items-center justify-between px-2 text-xs text-[#B5BCF0]">
-                  <span className="font-display font-bold text-white group-hover:text-[#ED5829] transition-colors">
-                    makaziflow.afrinextech.co.ke
-                  </span>
-                  <span className="inline-flex items-center gap-1.5 text-emerald-300 font-semibold">
-                    <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                    Live Production SaaS
-                  </span>
-                </div>
               </a>
             </div>
           </div>
