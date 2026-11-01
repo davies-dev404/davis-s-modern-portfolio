@@ -3,87 +3,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
-  :root {
-    /* STAX Theme Colors */
+  :root,
+  .dark {
+    /* AfriNex Tech Unified Corporate Royal Sapphire Palette (Single Theme — No Dark/Light Split) */
     --stax-white: 0 0% 100%;
-    --stax-black: 0 0% 0%;
-    --stax-dark-gray: 189 6% 24%; /* #383f40 approx */
-    --stax-medium-gray: 210 5% 42%; /* #656d6f approx */
-    --stax-light-gray: 0 0% 87%; /* #dddddd approx */
-    --stax-accent: 169 54% 48%; /* #38bda6 */
-    --stax-accent-secondary: 174 34% 88%; /* #D9E9E7 */
-    --stax-bg-dark: 221 18% 35%; /* #495369 */
-    --stax-bg-light: 180 20% 97%; /* #F5FAFA */
+    --stax-black: 222 47% 11%; /* Deep Enterprise Navy #0f172a */
+    --stax-dark-gray: 215 28% 17%; /* #1e293b */
+    --stax-medium-gray: 215 16% 42%; /* #5a687c */
+    --stax-light-gray: 214 32% 91%; /* #e2e8f0 */
+    --stax-accent: 221 83% 53%; /* Vibrant Royal Sapphire #2563eb */
+    --stax-accent-secondary: 214 95% 93%; /* Soft Ice Blue #dbeafe */
+    --stax-bg-dark: 222 47% 11%; /* #0f172a */
+    --stax-bg-light: 210 40% 98%; /* Crisp Corporate Slate #f8fafc */
 
     /* Mapping to Shadcn variables */
-    --background: var(--stax-white);
-    --foreground: 210 5% 42%; /* medium gray */
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
 
-    --card: var(--stax-white);
-    --card-foreground: 210 5% 42%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
 
-    --popover: var(--stax-white);
-    --popover-foreground: 210 5% 42%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: var(--stax-accent);
-    --primary-foreground: var(--stax-white);
+    --primary: 221 83% 53%; /* #2563eb Royal Sapphire Blue */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: var(--stax-accent-secondary);
-    --secondary-foreground: 221 18% 35%;
+    --secondary: 214 95% 93%;
+    --secondary-foreground: 222 47% 11%;
 
-    --muted: var(--stax-bg-light);
-    --muted-foreground: 210 5% 42%;
+    --muted: 210 40% 96.5%;
+    --muted-foreground: 215 16% 42%;
 
-    --accent: var(--stax-accent);
-    --accent-foreground: var(--stax-white);
+    --accent: 199 89% 48%; /* #0ea5e9 Electric Cyan-Blue */
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: var(--stax-light-gray);
-    --input: var(--stax-light-gray);
-    --ring: var(--stax-accent);
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 221 83% 53%;
 
-    --radius: 0.5rem;
+    --radius: 0.625rem;
 
     /* Custom tokens */
-    --stax-dark: 221 18% 35%;
-    --stax-light: 180 20% 97%;
-    
-    --shadow-soft: 6px 6px 18px 0 rgba(0, 0, 0, 0.1);
-    --shadow-natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
-  }
+    --stax-dark: 222 47% 11%;
+    --stax-light: 210 40% 98%;
 
-  .dark {
-    /* STAX Theme doesn't strictly have a "dark mode" in the reference, but we map reasonable dark equivalents */
-    --background: 221 18% 25%;
-    --foreground: 0 0% 95%;
-
-    --card: 221 18% 30%;
-    --card-foreground: 0 0% 95%;
-
-    --popover: 221 18% 30%;
-    --popover-foreground: 0 0% 95%;
-
-    --primary: 169 54% 55%; /* Lighter accent for dark mode */
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 221 18% 40%;
-    --secondary-foreground: 0 0% 100%;
-
-    --muted: 221 18% 35%;
-    --muted-foreground: 215 20% 65%;
-
-    --accent: 169 54% 55%;
-    --accent-foreground: 0 0% 100%;
-
-    --destructive: 0 62% 30%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 215 27% 20%;
-    --input: 215 27% 20%;
-    --ring: 169 54% 55%;
+    --shadow-soft: 0 10px 30px -5px rgba(37, 99, 235, 0.08);
+    --shadow-natural: 0 12px 24px -6px rgba(15, 23, 42, 0.12);
   }
 }
 
@@ -97,7 +68,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display font-bold tracking-tight text-black dark:text-white transition-colors duration-300;
+    @apply font-display font-bold tracking-tight text-stax-black transition-colors duration-300;
   }
 }
 
@@ -106,7 +77,7 @@
   .alignfull {
     @apply w-full relative left-[50%] right-[50%] -ml-[50vw] -mr-[50vw] max-w-[100vw];
   }
-  
+
   .alignwide {
     @apply w-full max-w-wide mx-auto px-4 sm:px-6;
   }
@@ -114,38 +85,46 @@
   .aligncontent {
     @apply w-full max-w-content mx-auto px-4 sm:px-6;
   }
-  
+
   .wp-block-button__link {
-    @apply inline-block px-6 py-3 rounded-full text-white bg-primary hover:bg-black dark:hover:bg-white dark:hover:text-black transition-colors duration-300 font-sans font-medium uppercase tracking-wider text-sm no-underline;
+    @apply inline-block px-6 py-3 rounded-full text-white bg-primary hover:bg-stax-black transition-colors duration-300 font-sans font-medium uppercase tracking-wider text-sm no-underline;
   }
 
   .wp-block-button.is-style-outline .wp-block-button__link {
-    @apply bg-transparent border-2 border-current text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white hover:bg-transparent;
+    @apply bg-transparent border-2 border-current text-gray-600 hover:text-stax-black hover:bg-transparent;
   }
 
   .organic-block {
-    @apply border-[3px] border-stax-accent rounded-xl bg-white dark:bg-stax-black dark:border-primary/50 p-8 transition-colors duration-300;
+    @apply border-2 border-primary/25 hover:border-primary rounded-2xl bg-white p-8 shadow-sm transition-all duration-300;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500;
+  }
+
+  .glass {
+    @apply bg-white/90 backdrop-blur-md border border-slate-200/80;
+  }
+
+  .card-shadow {
+    box-shadow: 0 12px 32px -8px rgba(15, 23, 42, 0.08);
   }
 }
 
 @layer utilities {
   .text-shadow {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 4px rgba(15, 23, 42, 0.08);
   }
 
   .gradient-bg {
-    background: linear-gradient(135deg, hsl(var(--stax-accent)), #2a8f7b);
+    background: linear-gradient(135deg, #2563eb, #0284c7);
   }
-  
+
   .glow {
-    box-shadow: 0 0 20px -5px hsl(var(--stax-accent) / 0.5);
+    box-shadow: 0 0 24px -5px rgba(37, 99, 235, 0.45);
   }
 
   .hero-gradient {
-    background: linear-gradient(to bottom, var(--stax-light), white);
-  }
-    
-  .dark .hero-gradient {
-    background: linear-gradient(to bottom, var(--stax-bg-dark), var(--stax-black));
+    background: linear-gradient(180deg, #eff6ff 0%, #f8fafc 50%, #ffffff 100%);
   }
 }

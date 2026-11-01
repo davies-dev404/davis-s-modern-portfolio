@@ -1,20 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
   <defs>
     <linearGradient id="favGrad" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#10b981" />
-      <stop offset="50%" stop-color="#059669" />
-      <stop offset="100%" stop-color="#047857" />
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="50%" stop-color="#1d4ed8" />
+      <stop offset="100%" stop-color="#0284c7" />
     </linearGradient>
     <linearGradient id="favAccent" x1="12" y1="12" x2="68" y2="68" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#34d399" />
-      <stop offset="100%" stop-color="#10b981" />
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
     </linearGradient>
   </defs>
-  <path d="M40 4L72 22.5V59.5L40 78L8 59.5V22.5L40 4Z" fill="url(#favGrad)" stroke="#34d399" stroke-width="2" />
-  <path d="M40 13L64 26.8V54.2L40 68L16 54.2V26.8L40 13Z" fill="#090d16" />
+  <path d="M40 4L72 22.5V59.5L40 78L8 59.5V22.5L40 4Z" fill="url(#favGrad)" stroke="#38bdf8" stroke-width="2" />
+  <path d="M40 13L64 26.8V54.2L40 68L16 54.2V26.8L40 13Z" fill="#0f172a" />
   <path d="M40 21L56 53H47.5L40 37L32.5 53H24L40 21Z" fill="url(#favAccent)" />
   <path d="M31 45H49L40 39L31 45Z" fill="#ffffff" />
   <circle cx="40" cy="21" r="3" fill="#ffffff" />
-  <circle cx="24" cy="53" r="2.5" fill="#34d399" />
-  <circle cx="56" cy="53" r="2.5" fill="#34d399" />
+  <circle cx="24" cy="53" r="2.5" fill="#38bdf8" />
+  <circle cx="56" cy="53" r="2.5" fill="#38bdf8" />
 </svg>
