@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,54 +7,54 @@
 @layer base {
   :root,
   .dark {
-    /* AfriNex Tech Unified Corporate Royal Sapphire Palette (Single Theme — No Dark/Light Split) */
+    /* AfriNex Tech — Savannah Informatics Enterprise Palette (Single Unified Light Theme) */
     --stax-white: 0 0% 100%;
-    --stax-black: 222 47% 11%; /* Deep Enterprise Navy #0f172a */
-    --stax-dark-gray: 215 28% 17%; /* #1e293b */
-    --stax-medium-gray: 215 16% 42%; /* #5a687c */
-    --stax-light-gray: 214 32% 91%; /* #e2e8f0 */
-    --stax-accent: 221 83% 53%; /* Vibrant Royal Sapphire #2563eb */
-    --stax-accent-secondary: 214 95% 93%; /* Soft Ice Blue #dbeafe */
-    --stax-bg-dark: 222 47% 11%; /* #0f172a */
-    --stax-bg-light: 210 40% 98%; /* Crisp Corporate Slate #f8fafc */
+    --stax-black: 233 57% 17%; /* Savannah Deep Indigo #131946 (rgb 19, 25, 70) */
+    --stax-dark-gray: 232 58% 35%; /* Savannah Rich Indigo #25318D (rgb 37, 49, 141) */
+    --stax-medium-gray: 229 18% 38%; /* Enterprise Slate-Indigo #505672 */
+    --stax-light-gray: 231 45% 91%; /* Soft Lavender Border #DCE0F5 */
+    --stax-accent: 232 64% 52%; /* Savannah Royal Indigo #384AD3 (rgb 56, 74, 211) */
+    --stax-accent-secondary: 232 67% 83%; /* Savannah Soft Periwinkle #B5BCF0 */
+    --stax-bg-dark: 233 57% 17%; /* #131946 */
+    --stax-bg-light: 255 33% 98%; /* Savannah Soft Lavender-White #F9F8FC */
 
     /* Mapping to Shadcn variables */
     --background: 0 0% 100%;
-    --foreground: 222 47% 11%;
+    --foreground: 233 57% 17%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 233 57% 17%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover-foreground: 233 57% 17%;
 
-    --primary: 221 83% 53%; /* #2563eb Royal Sapphire Blue */
+    --primary: 232 64% 52%; /* #384AD3 Savannah Royal Indigo */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 214 95% 93%;
-    --secondary-foreground: 222 47% 11%;
+    --secondary: 255 33% 98%; /* #F9F8FC */
+    --secondary-foreground: 233 57% 17%;
 
-    --muted: 210 40% 96.5%;
-    --muted-foreground: 215 16% 42%;
+    --muted: 255 33% 97.5%;
+    --muted-foreground: 229 18% 38%;
 
-    --accent: 199 89% 48%; /* #0ea5e9 Electric Cyan-Blue */
+    --accent: 14 84% 55%; /* #ED5829 Savannah Vibrant Coral-Orange Accent */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 221 83% 53%;
+    --border: 231 40% 90%;
+    --input: 231 40% 90%;
+    --ring: 232 64% 52%;
 
-    --radius: 0.625rem;
+    --radius: 0.75rem;
 
     /* Custom tokens */
-    --stax-dark: 222 47% 11%;
-    --stax-light: 210 40% 98%;
+    --stax-dark: 233 57% 17%;
+    --stax-light: 255 33% 98%;
 
-    --shadow-soft: 0 10px 30px -5px rgba(37, 99, 235, 0.08);
-    --shadow-natural: 0 12px 24px -6px rgba(15, 23, 42, 0.12);
+    --shadow-soft: 0 12px 32px -6px rgba(56, 74, 211, 0.10);
+    --shadow-natural: 0 14px 28px -8px rgba(19, 25, 70, 0.12);
   }
 }
 
@@ -87,7 +87,7 @@
   }
 
   .wp-block-button__link {
-    @apply inline-block px-6 py-3 rounded-full text-white bg-primary hover:bg-stax-black transition-colors duration-300 font-sans font-medium uppercase tracking-wider text-sm no-underline;
+    @apply inline-block px-6 py-3 rounded-full text-white bg-primary hover:bg-stax-black transition-colors duration-300 font-sans font-semibold tracking-wide text-sm no-underline;
   }
 
   .wp-block-button.is-style-outline .wp-block-button__link {
@@ -95,36 +95,36 @@
   }
 
   .organic-block {
-    @apply border-2 border-primary/25 hover:border-primary rounded-2xl bg-white p-8 shadow-sm transition-all duration-300;
+    @apply border border-[#DCE0F5] hover:border-primary rounded-2xl bg-white p-8 shadow-sm transition-all duration-300;
   }
 
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#384AD3] via-[#8015E8] to-[#ED5829];
   }
 
   .glass {
-    @apply bg-white/90 backdrop-blur-md border border-slate-200/80;
+    @apply bg-white/95 backdrop-blur-md border border-[#DCE0F5];
   }
 
   .card-shadow {
-    box-shadow: 0 12px 32px -8px rgba(15, 23, 42, 0.08);
+    box-shadow: 0 14px 36px -10px rgba(19, 25, 70, 0.08);
   }
 }
 
 @layer utilities {
   .text-shadow {
-    text-shadow: 2px 2px 4px rgba(15, 23, 42, 0.08);
+    text-shadow: 2px 2px 4px rgba(19, 25, 70, 0.08);
   }
 
   .gradient-bg {
-    background: linear-gradient(135deg, #2563eb, #0284c7);
+    background: linear-gradient(135deg, #384AD3 0%, #25318D 55%, #131946 100%);
   }
 
   .glow {
-    box-shadow: 0 0 24px -5px rgba(37, 99, 235, 0.45);
+    box-shadow: 0 0 28px -5px rgba(56, 74, 211, 0.45);
   }
 
   .hero-gradient {
-    background: linear-gradient(180deg, #eff6ff 0%, #f8fafc 50%, #ffffff 100%);
+    background: linear-gradient(180deg, #F9F8FC 0%, #EEF0FA 55%, #FFFFFF 100%);
   }
 }

@@ -9,10 +9,10 @@ export function StaxSection({
 }) {
   const bgColors = {
     white: "bg-white transition-colors duration-300",
-    light: "bg-slate-50 transition-colors duration-300",
-    dark: "bg-stax-black text-white transition-colors duration-300",
-    accent: "bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-600 transition-colors duration-300",
-    black: "bg-stax-black text-white transition-colors duration-300",
+    light: "bg-[#F9F8FC] transition-colors duration-300",
+    dark: "bg-[#131946] text-white transition-colors duration-300",
+    accent: "bg-gradient-to-r from-[#384AD3] via-[#25318D] to-[#131946] transition-colors duration-300",
+    black: "bg-[#131946] text-white transition-colors duration-300",
   };
 
   const widthClasses = {

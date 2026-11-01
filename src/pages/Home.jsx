@@ -1,6 +1,20 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight, Phone, Mail, Globe, Users, Zap, Shield } from "lucide-react";
+import {
+  ArrowRight,
+  Globe,
+  Users,
+  Zap,
+  Shield,
+  Building2,
+  CheckCircle2,
+  ExternalLink,
+  Layers,
+  Activity,
+  CreditCard,
+  BarChart3,
+  Sparkles,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/Layout";
 import { ProjectCard } from "@/components/ProjectCard";
@@ -12,24 +26,51 @@ import { services } from "@/data/services";
 
 const whyUs = [
   {
-    icon: Zap,
-    title: "Fast Delivery",
-    desc: "We ship production-ready solutions quickly without sacrificing quality."
+    icon: Layers,
+    title: "Connected Ecosystems",
+    desc: "We unify fragmented workflows—linking web portals, mobile apps, M-Pesa payments, and ERP backends into one seamless experience.",
   },
   {
     icon: Shield,
-    title: "Secure & Scalable",
-    desc: "Every system we build is architected for security and future growth."
+    title: "Enterprise-Grade Security",
+    desc: "Built with role-based access control, encrypted data pipelines, and high-availability cloud infrastructure you can trust.",
   },
   {
-    icon: Users,
-    title: "Dedicated Team",
-    desc: "A senior engineering team committed to your project from day one."
+    icon: BarChart3,
+    title: "Actionable Informatics",
+    desc: "Real-time dashboards, automated reconciliation, and executive analytics that turn operational data into smart decisions.",
   },
   {
     icon: Globe,
-    title: "Africa-First Focus",
-    desc: "Built for African realities — mobile-first, low bandwidth ready, local context."
+    title: "Built for African Scale",
+    desc: "Engineered in Nairobi for East African and global enterprises—fast on any network, mobile-first, and locally integrated.",
+  },
+];
+
+const industrySolutions = [
+  {
+    badge: "PropTech & Real Estate",
+    title: "Property & Tenant Automation",
+    desc: "End-to-end digital rent collection, automated M-Pesa receipting, lease tracking, and landlord reporting via MakaziFlow360°.",
+    accent: "#384AD3",
+  },
+  {
+    badge: "Health & Service Informatics",
+    title: "Patient & Operations Portals",
+    desc: "Streamlined appointment scheduling, digital records, billing workflows, and multi-branch analytics for modern clinics and providers.",
+    accent: "#8015E8",
+  },
+  {
+    badge: "FinTech & Commerce",
+    title: "Payment & B2B Marketplaces",
+    desc: "High-conversion e-commerce platforms, Daraja M-Pesa & bank API gateways, and automated inventory & order management.",
+    accent: "#ED5829",
+  },
+  {
+    badge: "Corporate & SMEs",
+    title: "Custom Enterprise Software",
+    desc: "Bespoke internal portals, HR/payroll automation, CRM integrations, and legacy system modernization tailored to your organization.",
+    accent: "#407C51",
   },
 ];
 
@@ -41,7 +82,7 @@ export default function Home() {
     <Layout>
       <StaxHero />
 
-      {/* Who We Are */}
+      {/* Savannah Informatics-Style Mission & Positioning Banner */}
       <StaxSection background="light" className="text-center" width="content">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -49,20 +90,22 @@ export default function Home() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-display font-bold text-5xl md:text-6xl text-stax-black dark:text-white mb-4 leading-none">
-            Built in Africa, <br /> Built for the World
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#384AD3]/10 text-[#384AD3] text-xs font-display font-bold uppercase tracking-widest mb-4">
+            <Sparkles className="w-3.5 h-3.5 text-[#ED5829]" />
+            Who We Are
+          </span>
+          <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-[#131946] mb-5 leading-tight">
+            Building Connected Digital Infrastructure for{" "}
+            <span className="text-[#384AD3]">Modern African Enterprises</span>
           </h2>
-          <h3 className="font-sans font-normal text-2xl md:text-3xl text-stax-medium-gray dark:text-gray-300 leading-tight mb-8">
-            Technology partner for businesses that want to grow with{" "}
-            <strong className="text-stax-black dark:text-white">AFRINEX TECH</strong>
-          </h3>
-          <p className="font-serif text-lg text-stax-medium-gray dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            We are a software engineering company delivering custom web applications, APIs, and digital transformation services. From startups to enterprises, we partner with ambitious businesses to build technology that works.
+          <p className="font-sans text-base md:text-lg text-[#505672] max-w-3xl mx-auto leading-relaxed">
+            At <strong className="text-[#131946]">AfriNex Tech</strong>, we believe organizations thrive when their software, payments, and data work together effortlessly. From our flagship{" "}
+            <strong className="text-[#384AD3]">MakaziFlow360°</strong> platform to custom enterprise web applications and API integrations, we engineer technology that drives measurable impact.
           </p>
         </motion.div>
       </StaxSection>
 
-      {/* Services / "Blocks" Section */}
+      {/* Core Solutions / "Blocks" Section */}
       <StaxSection background="accent">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative -mt-32 z-20">
           {featuredServices.map((service, index) => (
@@ -71,16 +114,146 @@ export default function Home() {
         </div>
       </StaxSection>
 
-      {/* Why Choose Us */}
+      {/* Flagship Product Spotlight (Savannah Informatics Slade360°-Style Product Showcase) */}
       <StaxSection background="white">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-12">
-          <div>
-            <h6 className="font-sans font-bold uppercase tracking-widest text-stax-medium-gray dark:text-gray-400 mb-2">Why Us</h6>
-            <h2 className="font-display font-bold text-5xl text-stax-black dark:text-white">Why AfriNex Tech?</h2>
+        <div className="rounded-3xl bg-gradient-to-br from-[#131946] via-[#25318D] to-[#384AD3] text-white p-8 md:p-12 lg:p-16 shadow-2xl relative overflow-hidden">
+          <div className="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-[#ED5829]/20 blur-3xl pointer-events-none" />
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10">
+            <div className="lg:col-span-7 space-y-6">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 border border-white/25 text-xs font-display font-bold uppercase tracking-widest text-[#B5BCF0]">
+                <Building2 className="w-4 h-4 text-[#ED5829]" />
+                Flagship SaaS Platform
+              </div>
+              <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white leading-tight">
+                MakaziFlow360° — Smart Property &amp; Rental Management
+              </h2>
+              <p className="text-[#B5BCF0] text-base md:text-lg leading-relaxed">
+                Designed and engineered by AfriNex Tech, MakaziFlow360° empowers landlords, property managers, and real estate agencies across Kenya to automate rent collection, M-Pesa reconciliation, tenant communication, and financial reporting in real time.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                {[
+                  "Automated M-Pesa & Bank Reconciliation",
+                  "Real-Time Occupancy & Arrears Analytics",
+                  "Digital Lease & Tenant Self-Service Portal",
+                  "Instant SMS/Email Receipts & Statements",
+                ].map((feature) => (
+                  <div key={feature} className="flex items-center gap-2.5 text-sm font-medium text-white">
+                    <CheckCircle2 className="w-4 h-4 text-[#ED5829] shrink-0" />
+                    <span>{feature}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="flex flex-wrap gap-4 pt-4">
+                <Button
+                  asChild
+                  size="lg"
+                  className="rounded-full font-display font-bold bg-[#ED5829] hover:bg-white hover:text-[#131946] text-white px-8 py-6 shadow-lg transition-all"
+                >
+                  <a href="https://makaziflow.afrinextech.co.ke" target="_blank" rel="noopener noreferrer">
+                    Launch MakaziFlow360° <ExternalLink className="ml-2 h-4 w-4" />
+                  </a>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  size="lg"
+                  className="rounded-full font-display font-bold border-2 border-white/40 bg-transparent text-white hover:bg-white hover:text-[#131946] px-8 py-6 transition-all"
+                >
+                  <Link to="/contact">Request Enterprise Demo</Link>
+                </Button>
+              </div>
+            </div>
+
+            <div className="lg:col-span-5">
+              <div className="rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 p-4 shadow-xl">
+                <img
+                  src="/assets/makaziflow-preview.png"
+                  alt="MakaziFlow360 Property Management SaaS by AfriNex Tech"
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-64 sm:h-72 object-cover rounded-xl border border-white/15"
+                />
+                <div className="mt-4 flex items-center justify-between px-2 text-xs text-[#B5BCF0]">
+                  <span className="font-display font-bold text-white">makaziflow.afrinextech.co.ke</span>
+                  <span className="inline-flex items-center gap-1.5 text-emerald-300 font-semibold">
+                    <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                    Live Production SaaS
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
-          <Button variant="outline" size="lg" asChild className="hidden md:flex rounded-full font-bold uppercase tracking-wider">
+        </div>
+      </StaxSection>
+
+      {/* Industries & Ecosystems We Serve */}
+      <StaxSection background="light">
+        <div className="text-center max-w-3xl mx-auto mb-14">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#384AD3]/10 text-[#384AD3] text-xs font-display font-bold uppercase tracking-widest mb-3">
+             Ecosystems &amp; Verticals
+          </span>
+          <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-[#131946] mb-4">
+            Solutions Tailored to Your Industry
+          </h2>
+          <p className="text-[#505672] text-base md:text-lg">
+            We combine domain expertise with modern software engineering to solve high-impact operational challenges.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {industrySolutions.map((item, idx) => (
+            <motion.div
+              key={item.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: idx * 0.1 }}
+              className="p-7 rounded-2xl bg-white border border-[#DCE0F5] hover:border-[#384AD3] shadow-sm hover:shadow-xl transition-all flex flex-col justify-between"
+            >
+              <div>
+                <span
+                  className="inline-block px-3 py-1 rounded-full text-xs font-display font-bold text-white mb-4"
+                  style={{ backgroundColor: item.accent }}
+                >
+                  {item.badge}
+                </span>
+                <h3 className="font-display font-bold text-xl text-[#131946] mb-3">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-[#505672] leading-relaxed">
+                  {item.desc}
+                </p>
+              </div>
+              <Link
+                to="/services"
+                className="inline-flex items-center gap-1.5 text-xs font-display font-bold text-[#384AD3] hover:text-[#ED5829] mt-6 transition-colors"
+              >
+                Explore Solution <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </motion.div>
+          ))}
+        </div>
+      </StaxSection>
+
+      {/* Why Choose AfriNex Tech */}
+      <StaxSection background="white">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
+          <div>
+            <span className="inline-block font-display font-bold uppercase tracking-widest text-xs text-[#ED5829] mb-2">
+              Why Partner With Us
+            </span>
+            <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-[#131946]">
+              The AfriNex Tech Advantage
+            </h2>
+          </div>
+          <Button
+            variant="outline"
+            size="lg"
+            asChild
+            className="hidden md:flex rounded-full font-display font-bold border-2 border-[#384AD3] text-[#384AD3] hover:bg-[#384AD3] hover:text-white"
+          >
             <Link to="/about">
-              Learn More <ArrowRight className="ml-2 h-4 w-4" />
+              About Our Company <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
         </div>
@@ -92,11 +265,13 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="p-6 rounded-2xl border border-border bg-background/50 hover:border-primary/50 hover:shadow-md transition-all group"
+              className="p-7 rounded-2xl border border-[#DCE0F5] bg-[#F9F8FC] hover:bg-white hover:border-[#384AD3] hover:shadow-lg transition-all group"
             >
-              <item.icon className="w-10 h-10 text-primary mb-4 group-hover:scale-110 transition-transform" />
-              <h3 className="font-display font-bold text-lg text-stax-black dark:text-white mb-2">{item.title}</h3>
-              <p className="text-stax-medium-gray dark:text-gray-400 text-sm leading-relaxed">{item.desc}</p>
+              <div className="w-12 h-12 rounded-xl bg-[#384AD3]/10 text-[#384AD3] flex items-center justify-center mb-5 group-hover:bg-[#384AD3] group-hover:text-white transition-colors">
+                <item.icon className="w-6 h-6" />
+              </div>
+              <h3 className="font-display font-bold text-lg text-[#131946] mb-2">{item.title}</h3>
+              <p className="text-[#505672] text-sm leading-relaxed">{item.desc}</p>
             </motion.div>
           ))}
         </div>
@@ -104,14 +279,23 @@ export default function Home() {
 
       {/* Featured Portfolio */}
       <StaxSection background="light">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-12">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
           <div>
-            <h6 className="font-sans font-bold uppercase tracking-widest text-stax-medium-gray dark:text-gray-400 mb-2">Portfolio</h6>
-            <h2 className="font-display font-bold text-5xl text-stax-black dark:text-white">Featured Work</h2>
+            <span className="inline-block font-display font-bold uppercase tracking-widest text-xs text-[#384AD3] mb-2">
+              Proven Track Record
+            </span>
+            <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-[#131946]">
+              Platforms &amp; Case Studies
+            </h2>
           </div>
-          <Button variant="outline" size="lg" asChild className="hidden md:flex rounded-full font-bold uppercase tracking-wider">
+          <Button
+            variant="outline"
+            size="lg"
+            asChild
+            className="hidden md:flex rounded-full font-display font-bold border-2 border-[#384AD3] text-[#384AD3] hover:bg-[#384AD3] hover:text-white"
+          >
             <Link to="/projects">
-              View All Projects <ArrowRight className="ml-2 h-4 w-4" />
+              View All Case Studies <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
         </div>
@@ -123,32 +307,47 @@ export default function Home() {
         </div>
 
         <div className="mt-12 text-center md:hidden">
-          <Button variant="outline" size="lg" asChild className="rounded-full font-bold uppercase tracking-wider">
+          <Button
+            variant="outline"
+            size="lg"
+            asChild
+            className="rounded-full font-display font-bold border-2 border-[#384AD3] text-[#384AD3]"
+          >
             <Link to="/projects">
-              View All Projects <ArrowRight className="ml-2 h-4 w-4" />
+              View All Case Studies <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
         </div>
       </StaxSection>
 
-      {/* CTA Section */}
-      <StaxSection background="white" className="border-t border-border">
+      {/* Enterprise CTA Section */}
+      <StaxSection background="white" className="border-t border-[#DCE0F5]">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="font-display font-bold text-5xl md:text-6xl text-stax-black dark:text-white mb-6">
-            Ready to Build <strong className="text-primary">Something Great?</strong>
+          <span className="inline-block px-4 py-1.5 rounded-full bg-[#ED5829]/10 text-[#ED5829] text-xs font-display font-bold uppercase tracking-widest mb-4">
+            Let&apos;s Transform Your Operations
+          </span>
+          <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-[#131946] mb-6 leading-tight">
+            Ready to Scale with <span className="text-[#384AD3]">AfriNex Tech?</span>
           </h2>
-          <p className="font-serif text-lg text-stax-medium-gray mb-10 leading-relaxed">
-            Have a project in mind? Let's talk. Whether it's a web app, API integration, or a full digital transformation — AfriNex Tech is your partner.
+          <p className="font-sans text-base md:text-lg text-[#505672] mb-10 leading-relaxed">
+            Whether you need a custom enterprise web platform, seamless M-Pesa &amp; ERP API integrations, or our MakaziFlow360° SaaS suite — our engineering team in Nairobi is ready to partner with you.
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4">
-            <Button asChild className="rounded-full font-bold uppercase tracking-wider px-8 py-6 bg-primary hover:bg-stax-black text-white transition-all duration-300 shadow-md">
-              <Link to="/contact">Get a Free Quote</Link>
+            <Button
+              asChild
+              className="rounded-full font-display font-bold text-sm px-8 py-6 bg-[#384AD3] hover:bg-white hover:text-[#384AD3] border-2 border-[#384AD3] text-white transition-all duration-300 shadow-lg"
+            >
+              <Link to="/contact">Schedule a Consultation</Link>
             </Button>
 
-            <Button asChild variant="outline" className="rounded-full font-bold uppercase tracking-wider px-8 py-6 border-2 border-stax-light-gray text-stax-medium-gray hover:text-primary hover:border-primary">
+            <Button
+              asChild
+              variant="outline"
+              className="rounded-full font-display font-bold text-sm px-8 py-6 border-2 border-[#131946]/20 text-[#131946] hover:text-[#384AD3] hover:border-[#384AD3]"
+            >
               <a href="https://wa.me/254790264792" target="_blank" rel="noopener noreferrer">
-                WhatsApp Us
+                Chat with Sales on WhatsApp
               </a>
             </Button>
           </div>

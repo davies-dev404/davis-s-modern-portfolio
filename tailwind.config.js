@@ -17,9 +17,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["Roboto", "system-ui", "sans-serif"],
-        display: ["Bebas Neue", "sans-serif"],
-        serif: ["Bitter", "serif"],
+        sans: ["Inter", "Montserrat", "system-ui", "sans-serif"],
+        display: ["Montserrat", "Inter", "system-ui", "sans-serif"],
+        serif: ["Inter", "system-ui", "sans-serif"],
         mono: ["JetBrains Mono", "monospace"],
       },
       colors: {
@@ -63,6 +63,16 @@ export default {
         "stax-black": "hsl(var(--stax-black))",
         "stax-dark-gray": "hsl(var(--stax-dark-gray))",
         "stax-medium-gray": "hsl(var(--stax-medium-gray))",
+        savannah: {
+          indigo: "#384AD3",
+          deep: "#25318D",
+          navy: "#131946",
+          lavender: "#B5BCF0",
+          surface: "#F9F8FC",
+          coral: "#ED5829",
+          purple: "#8015E8",
+          emerald: "#407C51",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -104,9 +114,9 @@ export default {
         shimmer: "shimmer 2s linear infinite",
       },
       maxWidth: {
-        'content': '960px',
-        'wide': '1366px',
-      }
+        content: "960px",
+        wide: "1366px",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

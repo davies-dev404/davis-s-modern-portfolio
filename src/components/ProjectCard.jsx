@@ -17,9 +17,9 @@ export function ProjectCard({ project, index }) {
       className="organic-block flex flex-col h-full hover:shadow-xl transition-all duration-300"
     >
       {/* Fast-Loading Image Container */}
-      <div className="relative h-48 -mx-8 -mt-8 mb-6 overflow-hidden rounded-t-xl border-b border-border bg-slate-100">
+      <div className="relative h-48 -mx-8 -mt-8 mb-6 overflow-hidden rounded-t-2xl border-b border-[#DCE0F5] bg-[#F9F8FC]">
         {!loaded && (
-          <div className="absolute inset-0 animate-pulse bg-gradient-to-r from-slate-100 via-blue-50 to-slate-100" />
+          <div className="absolute inset-0 animate-pulse bg-gradient-to-r from-[#F9F8FC] via-[#EEF0FA] to-[#F9F8FC]" />
         )}
         <img
           src={project.image}
@@ -37,11 +37,11 @@ export function ProjectCard({ project, index }) {
       </div>
 
       {/* Content */}
-      <h3 className="font-display font-bold text-2xl text-stax-black mb-3 transition-colors">
+      <h3 className="font-display font-bold text-xl text-[#131946] mb-3 transition-colors">
         {project.title}
       </h3>
 
-      <p className="font-serif text-stax-medium-gray text-base mb-6 flex-grow leading-relaxed">
+      <p className="font-sans text-[#505672] text-sm mb-6 flex-grow leading-relaxed">
         {project.description}
       </p>
 
@@ -50,7 +50,7 @@ export function ProjectCard({ project, index }) {
         {project.stack.map((tech) => (
           <span
             key={tech}
-            className="px-2.5 py-1 text-xs font-bold uppercase tracking-wide bg-blue-50 text-blue-700 border border-blue-200/60 rounded-md"
+            className="px-2.5 py-1 text-xs font-display font-semibold bg-[#F9F8FC] text-[#384AD3] border border-[#DCE0F5] rounded-md"
           >
             {tech}
           </span>
@@ -63,7 +63,7 @@ export function ProjectCard({ project, index }) {
           variant="outline"
           size="sm"
           asChild
-          className="flex-1 border-slate-300 text-stax-dark-gray hover:bg-primary hover:text-white hover:border-primary rounded-full font-bold uppercase tracking-wider text-xs"
+          className="flex-1 border-[#DCE0F5] text-[#131946] hover:bg-[#384AD3] hover:text-white hover:border-[#384AD3] rounded-full font-display font-bold text-xs"
         >
           <a href={project.github} target="_blank" rel="noopener noreferrer">
             <Github className="mr-2 h-4 w-4" /> Source
@@ -74,10 +74,10 @@ export function ProjectCard({ project, index }) {
           <Button
             size="sm"
             asChild
-            className="flex-1 bg-primary text-white hover:bg-stax-black rounded-full font-bold uppercase tracking-wider text-xs"
+            className="flex-1 bg-[#384AD3] text-white hover:bg-[#131946] rounded-full font-display font-bold text-xs"
           >
             <a href={project.demo} target="_blank" rel="noopener noreferrer">
-              <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
+              <ExternalLink className="mr-2 h-4 w-4" /> Live Platform
             </a>
           </Button>
         )}
