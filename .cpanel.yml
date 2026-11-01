@@ -2,6 +2,6 @@
 deployment:
   tasks:
     - export DEPLOYPATH=$HOME/public_html
-    - /bin/cp -R dist/* $DEPLOYPATH/
-    - /bin/cp dist/.htaccess $DEPLOYPATH/ 2>/dev/null || true
-
+    - /bin/rm -rf $DEPLOYPATH/features $DEPLOYPATH/dashboard-screenshot.png $DEPLOYPATH/opengraph.jpg $DEPLOYPATH/favicon.png $DEPLOYPATH/logo.png $DEPLOYPATH/assets/index-*.js $DEPLOYPATH/assets/index-*.css
+    - /bin/cp -rf dist/* $DEPLOYPATH/
+    - /bin/cp -f dist/.htaccess $DEPLOYPATH/ 2>/dev/null || true

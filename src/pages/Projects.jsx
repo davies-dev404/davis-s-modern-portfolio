@@ -24,9 +24,9 @@ export default function Projects() {
       <section className="py-12 md:py-24 hero-gradient">
         <div className="container mx-auto px-4">
           <SectionHeading
-            badge="Portfolio"
-            title="My Projects"
-            description="Explore my recent work and see how I bring ideas to life through code."
+            badge="Case Studies & Products"
+            title="Our Work & Solutions"
+            description="Explore enterprise platforms, SaaS products, and custom digital solutions engineered by AfriNex Tech."
             align="center"
           />
 

@@ -1,54 +1,32 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { AfriNexLogo } from "@/components/AfriNexLogo";
 
 const navLinks = [
   { path: "/", label: "Home" },
-  { path: "/about", label: "About" },
-  { path: "/projects", label: "Projects" },
+  { path: "/about", label: "About Us" },
   { path: "/services", label: "Services" },
-  { path: "/blog", label: "Blog" },
+  { path: "/projects", label: "Our Work" },
+  { path: "/blog", label: "Insights" },
   { path: "/contact", label: "Contact" },
 ];
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDark, setIsDark] = useState(() => document.documentElement.classList.contains("dark"));
-
-  useEffect(() => {
-    const observer = new MutationObserver(() => {
-      setIsDark(document.documentElement.classList.contains("dark"));
-    });
-    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
-    return () => observer.disconnect();
-  }, []);
-
   const location = useLocation();
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-stax-black/95 backdrop-blur-sm border-b border-border transition-colors duration-300">
       <div className="w-full max-w-wide mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-24">
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
-            <img 
-              src="/assets/logo-light.png" 
-              alt="AfriNex Tech" 
-              className="h-12 md:h-14 w-auto object-contain transition-transform group-hover:scale-105 dark:hidden block" 
-            />
-            <img 
-              src="/assets/logo.png" 
-              alt="AfriNex Tech" 
-              className="h-12 md:h-14 w-auto object-contain transition-transform group-hover:scale-105 dark:block hidden" 
-            />
-            <span className="font-display font-extrabold text-xl md:text-2xl text-stax-black dark:text-white tracking-tight group-hover:text-primary transition-colors">
-              AfriNex <span className="text-primary">Tech</span>
-            </span>
+          {/* Company Logo */}
+          <Link to="/" className="flex items-center">
+            <AfriNexLogo />
           </Link>
 
           {/* Desktop Navigation */}
@@ -72,11 +50,11 @@ export function Navbar() {
           {/* Actions */}
           <div className="flex items-center gap-4">
             <ThemeToggle />
-            
+
             <div className="hidden md:block">
               <Button asChild className="rounded-full font-bold uppercase tracking-wider px-6 py-6 bg-primary hover:bg-stax-black dark:hover:bg-white dark:hover:text-stax-black text-white transition-all duration-300 shadow-md hover:shadow-lg">
                 <Link to="/contact">
-                  Hire Me <ArrowRight className="ml-2 h-4 w-4" />
+                  Get a Quote <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
             </div>
@@ -121,7 +99,7 @@ export function Navbar() {
               <div className="pt-4 px-4">
                 <Button asChild className="w-full rounded-full font-bold uppercase tracking-wider py-6 bg-primary hover:bg-stax-black dark:hover:bg-white dark:hover:text-stax-black text-white transition-all duration-300">
                   <Link to="/contact" onClick={() => setIsOpen(false)}>
-                    Hire Me <ArrowRight className="ml-2 h-4 w-4" />
+                    Get a Quote <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
               </div>

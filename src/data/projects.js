@@ -193,8 +193,8 @@ export const projects = [
   },
   {
     "id": 10,
-    "title": "Dwellio – Rental Management System",
-    "description": "Rental management platform for properties, tenants, invoices, and digital payments.",
+    "title": "MakaziFlow – Property Management SaaS",
+    "description": "Automated property & rental management software for landlords and real estate managers in Kenya—featuring M-Pesa rent reconciliation, invoicing, and tenant portals.",
     "image": "/assets/rental-manager.png",
     "stack": [
       "React",
@@ -207,7 +207,7 @@ export const projects = [
       "Management"
     ],
     "github": "https://github.com/davies-dev404/rental-manager",
-    "demo": "https://rental-manager-seven.vercel.app/",
+    "demo": "https://makaziflow.afrinextech.co.ke",
     "featured": true
   },
   {
@@ -302,23 +302,5 @@ export const projects = [
     "github": "https://github.com/davies-dev404/Gulfstream_",
     "demo": "https://gulfstream-recycle.vercel.app",
     "featured": true
-  },
-  {
-    "id": 16,
-    "title": "AfriNex Tech - Official Website",
-    "description": "A personal portfolio website showcasing my projects, skills, and professional experience.",
-    "image": "/assets/portfolio.png",
-    "stack": [
-      "React",
-      "Node.js",
-      "Express"
-    ],
-    "category": [
-      "Full Stack",
-      "Portfolio"
-    ],
-    "github": "https://github.com/davies-dev404/davis-s-modern-portfolio",
-    "demo": "https://afrinextech.co.ke",
-    "featured": false
   }
 ];

@@ -1,10 +1,33 @@
+# AfriNex Tech (afrinextech.co.ke) Apache Configuration for cPanel
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+
+  # Enforce HTTPS on afrinextech.co.ke
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Canonical non-www to main domain afrinextech.co.ke
+  RewriteCond %{HTTP_HOST} ^www\.afrinextech\.co\.ke$ [NC]
+  RewriteRule ^(.*)$ https://afrinextech.co.ke/$1 [L,R=301]
+
+  # Serve existing files and directories directly
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME} !-l
+
+  # SPA Fallback to index.html
   RewriteRule . /index.html [L]
 </IfModule>
 
+# Ensure index.html is never stale-cached by browsers
+<IfModule mod_headers.c>
+  <FilesMatch "^(index\.html|sitemap\.xml|robots\.txt)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+  </FilesMatch>
+</IfModule>
+
+Options -Indexes

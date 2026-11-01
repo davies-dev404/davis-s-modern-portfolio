@@ -50,15 +50,15 @@ export default function Services() {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-4">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Services & Expertise</span>
+              <span>Enterprise Solutions &amp; Services</span>
             </div>
             
             <h1 className="font-display font-extrabold text-4xl sm:text-5xl md:text-6xl tracking-tight text-foreground mb-4">
-              WHAT I <span className="text-primary">OFFER</span>
+              WHAT WE <span className="text-primary">DELIVER</span>
             </h1>
 
             <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-              Comprehensive software engineering and design solutions tailored to bring your ideas to life with performance, elegance, and scale.
+              End-to-end software engineering, cloud architecture, and digital product solutions engineered by AfriNex Tech to help your organization scale.
             </p>
           </motion.div>
 

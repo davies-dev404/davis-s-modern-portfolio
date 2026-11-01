@@ -40,9 +40,9 @@ export default function Contact() {
       <section className="py-12 md:py-24 hero-gradient">
         <div className="container mx-auto px-4">
           <SectionHeading
-            badge="Contact"
-            title="Get in Touch"
-            description="Have a project in mind? Let's talk about how I can help."
+            badge="Contact Us"
+            title="Start a Conversation"
+            description="Have a software project, custom platform, or integration in mind? Speak with the AfriNex Tech engineering team."
             align="center"
           />
 
@@ -90,7 +90,7 @@ export default function Contact() {
                 transition={{ delay: 0.3 }}
                 className="glass rounded-xl p-6 card-shadow"
               >
-                <h3 className="font-display font-bold text-lg mb-4">Connect With Me</h3>
+                <h3 className="font-display font-bold text-lg mb-4">Connect With AfriNex Tech</h3>
                 <div className="flex gap-3">
                   {socialLinks.map((link) => (
                     <Button key={link.label} variant="ghost" size="icon" asChild>
