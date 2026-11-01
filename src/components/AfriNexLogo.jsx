@@ -3,7 +3,7 @@ export function AfriNexLogo({ className = "", showTagline = true, variant = "def
 
   return (
     <div className={`inline-flex items-center gap-3 select-none group ${className}`}>
-      {/* Savannah Informatics-Inspired Enterprise Emblem (#384AD3 Royal Indigo, #131946 Deep Navy & #ED5829 Coral Node) */}
+      {/* AfriNex Tech Emblem (#384AD3 Royal Indigo, #131946 Deep Navy & #ED5829 Coral Node) */}
       <div className="relative flex items-center justify-center w-11 h-11 md:w-12 md:h-12 transition-transform duration-300 group-hover:scale-105">
         <svg
           viewBox="0 0 80 80"
@@ -42,7 +42,7 @@ export function AfriNexLogo({ className = "", showTagline = true, variant = "def
           />
           {/* Forward Trajectory Crossbar */}
           <path d="M31 45H49L40 38.5L31 45Z" fill="#ffffff" />
-          {/* Signature Savannah Coral & Lavender Nodes */}
+          {/* Signature Coral & Lavender Nodes */}
           <circle cx="40" cy="20" r="3.5" fill="#ED5829" />
           <circle cx="24" cy="54" r="2.5" fill="#B5BCF0" />
           <circle cx="56" cy="54" r="2.5" fill="#B5BCF0" />
@@ -67,7 +67,7 @@ export function AfriNexLogo({ className = "", showTagline = true, variant = "def
               isLight ? "text-[#B5BCF0]" : "text-[#ED5829]"
             }`}
           >
-            Informatics &amp; Digital Solutions
+            Digital Solutions
           </span>
         )}
       </div>

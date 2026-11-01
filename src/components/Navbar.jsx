@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ArrowRight, Sparkles } from "lucide-react";
+import { Menu, X, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { AfriNexLogo } from "@/components/AfriNexLogo";
@@ -10,7 +10,7 @@ const navLinks = [
   { path: "/", label: "Home" },
   { path: "/about", label: "About Us" },
   { path: "/services", label: "Solutions" },
-  { path: "/projects", label: "Platforms & Work" },
+  { path: "/projects", label: "Our Work" },
   { path: "/blog", label: "Insights" },
   { path: "/contact", label: "Contact" },
 ];
@@ -46,24 +46,15 @@ export function Navbar() {
             ))}
           </div>
 
-          {/* Actions (Savannah Informatics Style Pill CTA — No Dark/Light Mode Toggle) */}
+          {/* Actions (Single CTA Button — No MakaziFlow360 Pill, No Dark/Light Mode Toggle) */}
           <div className="flex items-center gap-3">
             <div className="hidden md:flex items-center gap-3">
-              <a
-                href="https://makaziflow.afrinextech.co.ke"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#F9F8FC] border border-[#B5BCF0] text-[#384AD3] hover:bg-[#384AD3] hover:text-white text-xs font-display font-bold transition-all duration-300"
-              >
-                <Sparkles className="h-3.5 w-3.5 text-[#ED5829]" />
-                MakaziFlow360°
-              </a>
               <Button
                 asChild
                 className="rounded-full font-display font-bold text-sm px-6 py-5 bg-[#384AD3] hover:bg-white hover:text-[#384AD3] border-2 border-[#384AD3] text-white transition-all duration-300 shadow-md hover:shadow-lg"
               >
                 <Link to="/contact">
-                  Book a Demo <ArrowRight className="ml-2 h-4 w-4" />
+                  Get a Quote <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
             </div>
@@ -105,23 +96,13 @@ export function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <div className="pt-3 px-4 flex flex-col gap-3">
-                <a
-                  href="https://makaziflow.afrinextech.co.ke"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setIsOpen(false)}
-                  className="w-full inline-flex items-center justify-center gap-2 py-3 rounded-full bg-[#F9F8FC] border border-[#B5BCF0] text-[#384AD3] font-display font-bold text-sm"
-                >
-                  <Sparkles className="h-4 w-4 text-[#ED5829]" />
-                  Explore MakaziFlow360° Platform
-                </a>
+              <div className="pt-3 px-4">
                 <Button
                   asChild
                   className="w-full rounded-full font-display font-bold py-6 bg-[#384AD3] hover:bg-[#131946] text-white transition-all duration-300"
                 >
                   <Link to="/contact" onClick={() => setIsOpen(false)}>
-                    Book a Demo <ArrowRight className="ml-2 h-4 w-4" />
+                    Get a Quote <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
               </div>
