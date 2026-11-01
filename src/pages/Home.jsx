@@ -173,14 +173,14 @@ export default function Home() {
                 href="https://makaziflow.afrinextech.co.ke"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block group"
+                className="block rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 p-4 shadow-xl hover:border-white/40 transition-all group"
               >
                 <img
                   src="/assets/makaziflow-hero.jpg"
                   alt="MakaziFlow Property Management SaaS by AfriNex Tech"
                   loading="lazy"
                   decoding="async"
-                  className="w-full h-auto object-contain rounded-2xl shadow-2xl group-hover:scale-[1.02] transition-transform duration-300"
+                  className="w-full h-auto object-contain rounded-xl border border-white/15 group-hover:scale-[1.01] transition-transform"
                 />
               </a>
             </div>
