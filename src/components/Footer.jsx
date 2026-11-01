@@ -39,7 +39,7 @@ export function Footer() {
               <AfriNexLogo variant="light" />
             </Link>
             <p className="text-[#B5BCF0] text-sm leading-relaxed">
-              AfriNex Tech is a premier software engineering &amp; informatics company in Nairobi, Kenya — building connected ecosystems, SaaS products like MakaziFlow360°, and enterprise digital solutions across Africa.
+              AfriNex Tech is a premier software engineering &amp; digital solutions company in Nairobi, Kenya — building connected ecosystems, SaaS products like MakaziFlow, and enterprise platforms across Africa.
             </p>
             <div className="flex items-center gap-2 pt-1">
               {socialLinks.map((link) => (
@@ -87,7 +87,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 text-[#ED5829] hover:text-white font-display font-semibold transition-colors text-sm"
               >
-                MakaziFlow360° SaaS <ExternalLink className="h-3.5 w-3.5" />
+                MakaziFlow SaaS <ExternalLink className="h-3.5 w-3.5" />
               </a>
               {solutionLinks.map((item) => (
                 <Link
@@ -149,7 +149,7 @@ export function Footer() {
             © {new Date().getFullYear()} AfriNex Tech. All rights reserved.
           </p>
           <p className="text-[#B5BCF0]/80 text-xs">
-            Engineered in Nairobi, Kenya • Connected Digital Ecosystems Across Africa
+            Engineered in Nairobi, Kenya • Digital Solutions Across Africa
           </p>
         </div>
       </div>

@@ -3,15 +3,11 @@ import { Link } from "react-router-dom";
 import {
   ArrowRight,
   Globe,
-  Users,
-  Zap,
   Shield,
   Building2,
   CheckCircle2,
   ExternalLink,
   Layers,
-  Activity,
-  CreditCard,
   BarChart3,
   Sparkles,
 } from "lucide-react";
@@ -37,8 +33,8 @@ const whyUs = [
   },
   {
     icon: BarChart3,
-    title: "Actionable Informatics",
-    desc: "Real-time dashboards, automated reconciliation, and executive analytics that turn operational data into smart decisions.",
+    title: "Real-Time Analytics",
+    desc: "Executive dashboards, automated reconciliation, and live reporting that turn operational data into smart business decisions.",
   },
   {
     icon: Globe,
@@ -51,13 +47,13 @@ const industrySolutions = [
   {
     badge: "PropTech & Real Estate",
     title: "Property & Tenant Automation",
-    desc: "End-to-end digital rent collection, automated M-Pesa receipting, lease tracking, and landlord reporting via MakaziFlow360°.",
+    desc: "End-to-end digital rent collection, automated M-Pesa receipting, lease tracking, and landlord reporting via MakaziFlow.",
     accent: "#384AD3",
   },
   {
-    badge: "Health & Service Informatics",
+    badge: "Healthcare & Clinics",
     title: "Patient & Operations Portals",
-    desc: "Streamlined appointment scheduling, digital records, billing workflows, and multi-branch analytics for modern clinics and providers.",
+    desc: "Streamlined appointment scheduling, digital records, billing workflows, and multi-branch analytics for modern providers.",
     accent: "#8015E8",
   },
   {
@@ -82,7 +78,7 @@ export default function Home() {
     <Layout>
       <StaxHero />
 
-      {/* Savannah Informatics-Style Mission & Positioning Banner */}
+      {/* Who We Are Banner */}
       <StaxSection background="light" className="text-center" width="content">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -95,12 +91,20 @@ export default function Home() {
             Who We Are
           </span>
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-[#131946] mb-5 leading-tight">
-            Building Connected Digital Infrastructure for{" "}
+            Building Connected Digital Solutions for{" "}
             <span className="text-[#384AD3]">Modern African Enterprises</span>
           </h2>
           <p className="font-sans text-base md:text-lg text-[#505672] max-w-3xl mx-auto leading-relaxed">
             At <strong className="text-[#131946]">AfriNex Tech</strong>, we believe organizations thrive when their software, payments, and data work together effortlessly. From our flagship{" "}
-            <strong className="text-[#384AD3]">MakaziFlow360°</strong> platform to custom enterprise web applications and API integrations, we engineer technology that drives measurable impact.
+            <a
+              href="https://makaziflow.afrinextech.co.ke"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold text-[#384AD3] hover:underline"
+            >
+              MakaziFlow
+            </a>{" "}
+            platform to custom enterprise web applications and API integrations, we engineer digital solutions that drive measurable impact.
           </p>
         </motion.div>
       </StaxSection>
@@ -114,7 +118,7 @@ export default function Home() {
         </div>
       </StaxSection>
 
-      {/* Flagship Product Spotlight (Savannah Informatics Slade360°-Style Product Showcase) */}
+      {/* Flagship Product Spotlight: MakaziFlow */}
       <StaxSection background="white">
         <div className="rounded-3xl bg-gradient-to-br from-[#131946] via-[#25318D] to-[#384AD3] text-white p-8 md:p-12 lg:p-16 shadow-2xl relative overflow-hidden">
           <div className="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-[#ED5829]/20 blur-3xl pointer-events-none" />
@@ -125,10 +129,10 @@ export default function Home() {
                 Flagship SaaS Platform
               </div>
               <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white leading-tight">
-                MakaziFlow360° — Smart Property &amp; Rental Management
+                MakaziFlow — Smart Property &amp; Rental Management
               </h2>
               <p className="text-[#B5BCF0] text-base md:text-lg leading-relaxed">
-                Designed and engineered by AfriNex Tech, MakaziFlow360° empowers landlords, property managers, and real estate agencies across Kenya to automate rent collection, M-Pesa reconciliation, tenant communication, and financial reporting in real time.
+                Designed and engineered by AfriNex Tech, MakaziFlow empowers landlords, property managers, and real estate agencies across Kenya to automate rent collection, M-Pesa reconciliation, tenant communication, and financial reporting in real time.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                 {[
@@ -150,7 +154,7 @@ export default function Home() {
                   className="rounded-full font-display font-bold bg-[#ED5829] hover:bg-white hover:text-[#131946] text-white px-8 py-6 shadow-lg transition-all"
                 >
                   <a href="https://makaziflow.afrinextech.co.ke" target="_blank" rel="noopener noreferrer">
-                    Launch MakaziFlow360° <ExternalLink className="ml-2 h-4 w-4" />
+                    Launch MakaziFlow <ExternalLink className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
                 <Button
@@ -165,22 +169,29 @@ export default function Home() {
             </div>
 
             <div className="lg:col-span-5">
-              <div className="rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 p-4 shadow-xl">
+              <a
+                href="https://makaziflow.afrinextech.co.ke"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 p-4 shadow-xl hover:border-white/40 transition-all group"
+              >
                 <img
-                  src="/assets/makaziflow-preview.png"
-                  alt="MakaziFlow360 Property Management SaaS by AfriNex Tech"
+                  src="/assets/rental-manager.png"
+                  alt="MakaziFlow Property Management SaaS by AfriNex Tech"
                   loading="lazy"
                   decoding="async"
-                  className="w-full h-64 sm:h-72 object-cover rounded-xl border border-white/15"
+                  className="w-full h-64 sm:h-72 object-cover object-top rounded-xl border border-white/15 group-hover:scale-[1.01] transition-transform"
                 />
                 <div className="mt-4 flex items-center justify-between px-2 text-xs text-[#B5BCF0]">
-                  <span className="font-display font-bold text-white">makaziflow.afrinextech.co.ke</span>
+                  <span className="font-display font-bold text-white group-hover:text-[#ED5829] transition-colors">
+                    makaziflow.afrinextech.co.ke
+                  </span>
                   <span className="inline-flex items-center gap-1.5 text-emerald-300 font-semibold">
                     <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
                     Live Production SaaS
                   </span>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -190,7 +201,7 @@ export default function Home() {
       <StaxSection background="light">
         <div className="text-center max-w-3xl mx-auto mb-14">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#384AD3]/10 text-[#384AD3] text-xs font-display font-bold uppercase tracking-widest mb-3">
-             Ecosystems &amp; Verticals
+            Ecosystems &amp; Verticals
           </span>
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-[#131946] mb-4">
             Solutions Tailored to Your Industry
@@ -330,7 +341,7 @@ export default function Home() {
             Ready to Scale with <span className="text-[#384AD3]">AfriNex Tech?</span>
           </h2>
           <p className="font-sans text-base md:text-lg text-[#505672] mb-10 leading-relaxed">
-            Whether you need a custom enterprise web platform, seamless M-Pesa &amp; ERP API integrations, or our MakaziFlow360° SaaS suite — our engineering team in Nairobi is ready to partner with you.
+            Whether you need a custom enterprise web platform, seamless M-Pesa &amp; ERP API integrations, or our MakaziFlow SaaS suite — our engineering team in Nairobi is ready to partner with you.
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4">
