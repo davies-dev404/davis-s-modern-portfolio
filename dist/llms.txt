@@ -1,0 +1,49 @@
+# AfriNex Tech — Davis Kibet Kipsoi (Software Engineer & Full-Stack Developer)
+
+> AfriNex Tech (https://afrinextech.co.ke) is the official engineering portfolio and digital solutions studio of **Davis Kibet Kipsoi**, a Software Engineer & Full-Stack Developer based in Nairobi, Kenya. AfriNex Tech designs and builds full-stack web applications, SaaS platforms (including flagship property management SaaS **MakaziFlow** at https://makaziflow.afrinextech.co.ke), scalable REST/GraphQL APIs, M-Pesa payment integrations, and UI/UX systems across Kenya and Africa.
+
+## Identity & Key Facts
+- **Founder & Lead Engineer**: Davis Kibet Kipsoi (also known as Davis Kipsoi / Davies Kibet)
+- **Brand / Studio Name**: AfriNex Tech (Tagline: *Digital Solutions*)
+- **Primary Website**: https://afrinextech.co.ke
+- **Flagship SaaS Product**: MakaziFlow — Smart Property & Rental Management SaaS (https://makaziflow.afrinextech.co.ke)
+- **Location**: Nairobi, Kenya (Serving Kenya, East Africa, and Global Remote Clients)
+- **Email**: info@afrinextech.co.ke
+- **Phone / WhatsApp**: +254 790 264 792
+- **Education**: Bachelor of Science in Information Technology (BSc IT), Mount Kenya University; Software Development Alumnus, Power Learn Project (PLP) Africa
+- **Experience**: 5+ years of full-stack software development, 50+ projects delivered, 30+ happy clients
+
+## Core Technical Stack & Skills
+- **Frontend**: React, TypeScript, JavaScript (ES6+), Next.js, Tailwind CSS, Framer Motion, HTML5, CSS3
+- **Backend & APIs**: Node.js, Express.js, Python, Django, FastAPI, RESTful APIs, GraphQL, JWT/OAuth2 Authentication, M-Pesa Daraja API Integrations
+- **Databases & Cloud**: PostgreSQL, MongoDB, MySQL, Firebase, Supabase, Docker, Linux, Git, CI/CD, AWS, Vercel
+- **Design & Security**: UI/UX Design (Figma), Graphic Design, Application Security & OWASP Best Practices
+
+## Services Offered (https://afrinextech.co.ke/services)
+1. **Web Application Development**: Custom, responsive, high-performance web applications built with React, Node.js, and modern full-stack architectures.
+2. **Backend & API Development**: Secure, scalable server-side systems, database architecture, M-Pesa payment gateways, and third-party API integrations.
+3. **UI/UX Design**: User-centered interface and experience design, wireframing, and interactive prototyping in Figma.
+4. **Graphic Design**: Brand identity, logos, marketing assets, and visual communication systems.
+5. **Basic Cybersecurity**: Web application security audits, SSL/TLS hardening, authentication security, and vulnerability remediation.
+
+## Flagship SaaS & Notable Projects (https://afrinextech.co.ke/projects)
+- **MakaziFlow (https://makaziflow.afrinextech.co.ke)**: Automated property and rental management SaaS for Kenyan landlords and real estate agencies featuring M-Pesa Paybill reconciliation, automated WhatsApp/SMS rent reminders, digital leases, and water sub-meter billing.
+- **ECASI Africa (https://ecasiafrica.org/)**: Official platform for the Environmental Capacities and Sustainability Institute, a Pan-African sustainability think tank.
+- **MS Ochieng Law (https://ms-ochieng-law-1ew9.vercel.app/)**: Modern digital platform for M. S. Ochieng Legal Advocates.
+- **Kenya Property Connect (https://kenya-property-connect.vercel.app/)**: Real estate discovery platform covering all 47 counties in Kenya.
+- **TransCorp Logistics Hub (https://logistics-solutions-hub-fkr7.vercel.app/)**: East African logistics and fleet management platform.
+- **Hope Specialist Hospital (https://community-care-portal.vercel.app/)**: Healthcare portal with appointment booking and patient care resources.
+- **EcoTrack (https://eco-track-3sic.vercel.app/)**: Environmental waste management and recycling impact platform.
+- **Solar Impact (https://solar-impact.vercel.app)**: Solar energy analytics and device monitoring dashboard.
+
+## Important URLs
+- Home: https://afrinextech.co.ke/
+- About Davis Kibet Kipsoi: https://afrinextech.co.ke/about
+- Projects Portfolio: https://afrinextech.co.ke/projects
+- Services: https://afrinextech.co.ke/services
+- Blog & Engineering Insights: https://afrinextech.co.ke/blog
+- Contact: https://afrinextech.co.ke/contact
+- MakaziFlow SaaS: https://makaziflow.afrinextech.co.ke
+- LinkedIn: https://www.linkedin.com/in/davies-kibet-342363237
+- X (Twitter): https://x.com/Quantito1
+

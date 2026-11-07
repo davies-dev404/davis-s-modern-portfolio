@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,54 +7,62 @@
 @layer base {
   :root,
   .dark {
-    /* AfriNex Tech — Savannah Informatics Enterprise Palette (Single Unified Light Theme) */
-    --stax-white: 0 0% 100%;
-    --stax-black: 233 57% 17%; /* Savannah Deep Indigo #131946 (rgb 19, 25, 70) */
-    --stax-dark-gray: 232 58% 35%; /* Savannah Rich Indigo #25318D (rgb 37, 49, 141) */
-    --stax-medium-gray: 229 18% 38%; /* Enterprise Slate-Indigo #505672 */
-    --stax-light-gray: 231 45% 91%; /* Soft Lavender Border #DCE0F5 */
-    --stax-accent: 232 64% 52%; /* Savannah Royal Indigo #384AD3 (rgb 56, 74, 211) */
-    --stax-accent-secondary: 232 67% 83%; /* Savannah Soft Periwinkle #B5BCF0 */
-    --stax-bg-dark: 233 57% 17%; /* #131946 */
-    --stax-bg-light: 255 33% 98%; /* Savannah Soft Lavender-White #F9F8FC */
+    /* micro1.ai Inspired Dark Theme Palette for AfriNex Tech */
+    --color-icon: #6d7cff;
+    --color-icon-light: rgba(189, 208, 255, 0.5);
+    --color-logo: #e5efff;
+    --color-dm-sec-btn: #25252e;
+    --color-dm-primary-text: #bbb;
+    --color-dm-accent: #6d7cff;
+    --color-dm-secondary-text: #eee;
+    --color-primary-blue: #3444da;
 
-    /* Mapping to Shadcn variables */
-    --background: 0 0% 100%;
-    --foreground: 233 57% 17%;
+    --stax-white: 0 0% 7%;
+    --stax-black: 0 0% 96%;
+    --stax-dark-gray: 225 20% 88%;
+    --stax-medium-gray: 225 12% 68%;
+    --stax-light-gray: 230 14% 18%;
+    --stax-accent: 234 100% 71%; /* #6d7cff micro1 accent */
+    --stax-accent-secondary: 234 70% 53%; /* #3444da micro1 primary blue */
+    --stax-bg-dark: 0 0% 7%; /* #121212 */
+    --stax-bg-light: 240 10% 10%; /* #17171c */
 
-    --card: 0 0% 100%;
-    --card-foreground: 233 57% 17%;
+    /* Shadcn Variables mapped to micro1 Dark Aesthetic */
+    --background: 0 0% 7%; /* #121212 */
+    --foreground: 0 0% 95%; /* #f2f2f2 */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 233 57% 17%;
+    --card: 240 8% 10%; /* #18181c */
+    --card-foreground: 0 0% 95%;
 
-    --primary: 232 64% 52%; /* #384AD3 Savannah Royal Indigo */
+    --popover: 240 8% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 234 100% 71%; /* #6d7cff */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 255 33% 98%; /* #F9F8FC */
-    --secondary-foreground: 233 57% 17%;
+    --secondary: 240 11% 16%; /* #25252e */
+    --secondary-foreground: 0 0% 95%;
 
-    --muted: 255 33% 97.5%;
-    --muted-foreground: 229 18% 38%;
+    --muted: 240 8% 13%;
+    --muted-foreground: 225 12% 68%;
 
-    --accent: 14 84% 55%; /* #ED5829 Savannah Vibrant Coral-Orange Accent */
+    --accent: 234 70% 53%; /* #3444da */
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 72% 58%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 231 40% 90%;
-    --input: 231 40% 90%;
-    --ring: 232 64% 52%;
+    --border: 0 0% 100% / 0.10;
+    --input: 0 0% 100% / 0.12;
+    --ring: 234 100% 71%;
 
     --radius: 0.75rem;
 
-    /* Custom tokens */
-    --stax-dark: 233 57% 17%;
-    --stax-light: 255 33% 98%;
+    --stax-dark: 0 0% 7%;
+    --stax-light: 240 8% 10%;
 
-    --shadow-soft: 0 12px 32px -6px rgba(56, 74, 211, 0.10);
-    --shadow-natural: 0 14px 28px -8px rgba(19, 25, 70, 0.12);
+    --shadow-soft: 0 14px 36px -8px rgba(0, 0, 0, 0.55);
+    --shadow-natural: 0 16px 32px -8px rgba(52, 68, 218, 0.22);
   }
 }
 
@@ -64,16 +72,18 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased leading-relaxed;
+    @apply bg-[#121212] text-foreground font-sans antialiased leading-relaxed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display font-bold tracking-tight text-stax-black transition-colors duration-300;
+    @apply font-display font-semibold tracking-tight text-white transition-colors duration-300;
   }
 }
 
 @layer components {
-  /* STAX Block Layouts */
   .alignfull {
     @apply w-full relative left-[50%] right-[50%] -ml-[50vw] -mr-[50vw] max-w-[100vw];
   }
@@ -86,45 +96,88 @@
     @apply w-full max-w-content mx-auto px-4 sm:px-6;
   }
 
-  .wp-block-button__link {
-    @apply inline-block px-6 py-3 rounded-full text-white bg-primary hover:bg-stax-black transition-colors duration-300 font-sans font-semibold tracking-wide text-sm no-underline;
-  }
-
-  .wp-block-button.is-style-outline .wp-block-button__link {
-    @apply bg-transparent border-2 border-current text-gray-600 hover:text-stax-black hover:bg-transparent;
-  }
-
   .organic-block {
-    @apply border border-[#DCE0F5] hover:border-primary rounded-2xl bg-white p-8 shadow-sm transition-all duration-300;
+    @apply border border-white/10 hover:border-[#6d7cff]/50 rounded-2xl bg-[#18181c]/90 backdrop-blur-md p-7 shadow-lg transition-all duration-300;
   }
 
-  .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#384AD3] via-[#8015E8] to-[#ED5829];
+  /* micro1 signature gradient text */
+  .gradient-text,
+  .text-color-gradient-accent {
+    background: radial-gradient(
+      136.77% 48.2% at 56.16% 64.76%,
+      #F4EDBF 2.28%,
+      #D0D0E0 10.25%,
+      #C7D8E6 14.96%,
+      #9BBAFF 19.64%,
+      #A2B5FF 30.61%,
+      #BAC0F5 57.61%,
+      #BBC2F7 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .glass {
-    @apply bg-white/95 backdrop-blur-md border border-[#DCE0F5];
+    @apply bg-[#18181c]/85 backdrop-blur-xl border border-white/10;
   }
 
   .card-shadow {
-    box-shadow: 0 14px 36px -10px rgba(19, 25, 70, 0.08);
+    box-shadow: 0 20px 45px -15px rgba(0, 0, 0, 0.7), 0 0 1px 1px rgba(255, 255, 255, 0.06);
   }
 }
 
 @layer utilities {
   .text-shadow {
-    text-shadow: 2px 2px 4px rgba(19, 25, 70, 0.08);
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
   }
 
   .gradient-bg {
-    background: linear-gradient(135deg, #384AD3 0%, #25318D 55%, #131946 100%);
+    background: linear-gradient(135deg, #3444da 0%, #6d7cff 100%);
   }
 
   .glow {
-    box-shadow: 0 0 28px -5px rgba(56, 74, 211, 0.45);
+    box-shadow: 0 0 32px -6px rgba(109, 124, 255, 0.45);
   }
 
   .hero-gradient {
-    background: linear-gradient(180deg, #F9F8FC 0%, #EEF0FA 55%, #FFFFFF 100%);
+    background: radial-gradient(65% 80% at 50% 0%, rgba(52, 68, 218, 0.22) 0%, rgba(24, 24, 28, 0.92) 55%, #121212 100%);
   }
+
+  /* micro1 Atmospheric Sky Hero Gradient */
+  .micro1-sky-bg {
+    background: linear-gradient(
+      180deg,
+      #1a202c 0%,
+      #2d3748 22%,
+      #4C5969 45%,
+      #6C7B88 68%,
+      #B3AFAE 85%,
+      #F5C9AC 100%
+    );
+  }
+
+  /* micro1 Leaderboard Bar Fill */
+  .micro1-bar-fill {
+    background: linear-gradient(90deg, #4f69d4 0%, #a0b3ff 100%);
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
 }

@@ -40,9 +40,9 @@ export default function Contact() {
       <section className="py-12 md:py-24 hero-gradient">
         <div className="container mx-auto px-4">
           <SectionHeading
-            badge="Contact Us"
-            title="Start a Conversation"
-            description="Have a software project, custom platform, or integration in mind? Speak with the AfriNex Tech engineering team."
+            badge="Contact"
+            title="Get in Touch"
+            description="Have a project in mind? Let's talk about how I can help."
             align="center"
           />
 
@@ -63,20 +63,20 @@ export default function Contact() {
                     transition={{ delay: index * 0.1 }}
                     className="flex items-center gap-4"
                   >
-                    <div className="w-12 h-12 rounded-xl gradient-bg flex items-center justify-center">
-                      <item.icon className="w-5 h-5 text-primary-foreground" />
+                    <div className="w-12 h-12 rounded-xl bg-[#3444da]/20 border border-[#6d7cff]/30 flex items-center justify-center">
+                      <item.icon className="w-5 h-5 text-[#6d7cff]" />
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">{item.label}</p>
+                      <p className="text-sm text-white/55">{item.label}</p>
                       {item.href ? (
                         <a
                           href={item.href}
-                          className="text-foreground hover:text-primary transition-colors font-medium"
+                          className="text-white hover:text-[#6d7cff] transition-colors font-medium"
                         >
                           {item.value}
                         </a>
                       ) : (
-                        <p className="text-foreground font-medium">{item.value}</p>
+                        <p className="text-white font-medium">{item.value}</p>
                       )}
                     </div>
                   </motion.div>
@@ -88,12 +88,18 @@ export default function Contact() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
-                className="glass rounded-xl p-6 card-shadow"
+                className="organic-block p-6"
               >
-                <h3 className="font-display font-bold text-lg mb-4">Connect With AfriNex Tech</h3>
+                <h3 className="font-display font-medium text-lg text-white mb-4">Connect With Me</h3>
                 <div className="flex gap-3">
                   {socialLinks.map((link) => (
-                    <Button key={link.label} variant="ghost" size="icon" asChild>
+                    <Button
+                      key={link.label}
+                      variant="ghost"
+                      size="icon"
+                      className="rounded-full bg-white/[0.05] text-white/75 hover:bg-[#3444da] hover:text-white border border-white/10"
+                      asChild
+                    >
                       <a
                         href={link.href}
                         target="_blank"
@@ -112,19 +118,19 @@ export default function Contact() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
-                className="glass rounded-xl p-6 card-shadow"
+                className="organic-block p-6"
               >
-                <h3 className="font-display font-bold text-lg mb-2">Prefer WhatsApp?</h3>
-                <p className="text-muted-foreground text-sm mb-4">
+                <h3 className="font-display font-medium text-lg text-white mb-2">Prefer WhatsApp?</h3>
+                <p className="text-white/65 text-sm mb-4">
                   For quick responses, feel free to reach out on WhatsApp.
                 </p>
-                <Button variant="hero" className="w-full" asChild>
+                <Button className="w-full rounded-full bg-[#3444da] hover:bg-[#4f69d4] text-white font-display font-medium" asChild>
                   <a
                     href="https://wa.me/254790264792?text=Hello%2C%20I%20would%20like%20to%20get%20in%20touch%20with%20you"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <MessageCircle className="h-4 w-4" />
+                    <MessageCircle className="h-4 w-4 mr-2" />
                     Chat on WhatsApp
                   </a>
                 </Button>

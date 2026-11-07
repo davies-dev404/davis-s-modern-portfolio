@@ -1,20 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
   <defs>
-    <linearGradient id="savannahHexGrad" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#384AD3" />
-      <stop offset="55%" stop-color="#25318D" />
-      <stop offset="100%" stop-color="#8015E8" />
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1e2238" />
+      <stop offset="100%" stop-color="#121212" />
     </linearGradient>
-    <linearGradient id="savannahApexGrad" x1="16" y1="16" x2="64" y2="64" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#8F98E2" />
-      <stop offset="100%" stop-color="#384AD3" />
+    <linearGradient id="borderGrad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6d7cff" />
+      <stop offset="100%" stop-color="#3444da" />
+    </linearGradient>
+    <linearGradient id="anMain" x1="10" y1="12" x2="54" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#a0b3ff" />
+      <stop offset="100%" stop-color="#6d7cff" />
+    </linearGradient>
+    <linearGradient id="anAccent" x1="24" y1="12" x2="54" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6d7cff" />
+      <stop offset="100%" stop-color="#3444da" />
     </linearGradient>
   </defs>
-  <path d="M40 4L72 22.5V59.5L40 78L8 59.5V22.5L40 4Z" fill="url(#savannahHexGrad)" stroke="#B5BCF0" stroke-width="2" stroke-opacity="0.7" />
-  <path d="M40 13L64 26.8V54.2L40 68L16 54.2V26.8L40 13Z" fill="#131946" />
-  <path d="M40 20L56 54H47.5L40 37.5L32.5 54H24L40 20Z" fill="url(#savannahApexGrad)" />
-  <path d="M31 45H49L40 38.5L31 45Z" fill="#ffffff" />
-  <circle cx="40" cy="20" r="3.5" fill="#ED5829" />
-  <circle cx="24" cy="54" r="2.5" fill="#B5BCF0" />
-  <circle cx="56" cy="54" r="2.5" fill="#B5BCF0" />
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="2.5" />
+  <path d="M12 49L25.5 15H33.5L20 49H12Z" fill="url(#anMain)" />
+  <path d="M25.5 15H33.5L47 49H39L25.5 15Z" fill="url(#anAccent)" />
+  <path d="M42.5 49V21.5L38 25.5V18.5L46.5 11L55 18.5V25.5L50.5 21.5V49H42.5Z" fill="url(#anMain)" />
+  <rect x="17.5" y="35" width="17" height="5" rx="2.5" fill="#F4EDBF" />
 </svg>

@@ -17,9 +17,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["Inter", "Montserrat", "system-ui", "sans-serif"],
-        display: ["Montserrat", "Inter", "system-ui", "sans-serif"],
-        serif: ["Inter", "system-ui", "sans-serif"],
+        sans: ["Outfit", "Inter", "system-ui", "sans-serif"],
+        display: ["Outfit", "Inter", "system-ui", "sans-serif"],
+        serif: ["Inter", "Outfit", "system-ui", "sans-serif"],
         mono: ["JetBrains Mono", "monospace"],
       },
       colors: {
@@ -63,15 +63,14 @@ export default {
         "stax-black": "hsl(var(--stax-black))",
         "stax-dark-gray": "hsl(var(--stax-dark-gray))",
         "stax-medium-gray": "hsl(var(--stax-medium-gray))",
-        savannah: {
-          indigo: "#384AD3",
-          deep: "#25318D",
-          navy: "#131946",
-          lavender: "#B5BCF0",
-          surface: "#F9F8FC",
-          coral: "#ED5829",
-          purple: "#8015E8",
-          emerald: "#407C51",
+        micro1: {
+          bg: "#121212",
+          card: "#191919",
+          surface: "#25252e",
+          accent: "#6d7cff",
+          blue: "#3444da",
+          barStart: "#4f69d4",
+          barEnd: "#a0b3ff",
         },
       },
       borderRadius: {

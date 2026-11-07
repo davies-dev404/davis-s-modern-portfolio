@@ -31,7 +31,7 @@
   <FilesMatch "\.(png|jpe?g|webp|gif|svg|ico|woff2?|ttf|eot|css|js)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>
-  <FilesMatch "^(index\.html|sitemap\.xml|robots\.txt)$">
+  <FilesMatch "^(index\.html|sitemap\.xml|robots\.txt|llms\.txt)$">
     Header set Cache-Control "no-cache, no-store, must-revalidate"
     Header set Pragma "no-cache"
     Header set Expires 0

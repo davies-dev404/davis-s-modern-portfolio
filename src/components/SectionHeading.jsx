@@ -8,7 +8,7 @@ export function SectionHeading({ badge, title, description, align = "left" }) {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="inline-block px-3 py-1 text-xs font-semibold bg-primary/10 text-primary rounded-full mb-4"
+          className="inline-block px-3.5 py-1 text-xs font-mono uppercase tracking-widest bg-white/[0.06] text-[#a0b3ff] border border-white/10 rounded-full mb-4"
         >
           {badge}
         </motion.span>
@@ -19,7 +19,7 @@ export function SectionHeading({ badge, title, description, align = "left" }) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.1 }}
-        className="text-3xl md:text-4xl font-bold mb-4"
+        className="text-3xl md:text-5xl font-display font-normal tracking-tight text-white mb-4"
       >
         {title}
       </motion.h2>
@@ -30,7 +30,7 @@ export function SectionHeading({ badge, title, description, align = "left" }) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="text-lg text-muted-foreground"
+          className="text-base md:text-lg text-white/65"
         >
           {description}
         </motion.p>

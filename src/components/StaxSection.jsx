@@ -8,11 +8,12 @@ export function StaxSection({
   padding = true,
 }) {
   const bgColors = {
-    white: "bg-white transition-colors duration-300",
-    light: "bg-[#F9F8FC] transition-colors duration-300",
-    dark: "bg-[#131946] text-white transition-colors duration-300",
-    accent: "bg-gradient-to-r from-[#384AD3] via-[#25318D] to-[#131946] transition-colors duration-300",
-    black: "bg-[#131946] text-white transition-colors duration-300",
+    white: "bg-[#121212] text-white transition-colors duration-300",
+    light: "bg-[#17171c] text-white transition-colors duration-300",
+    dark: "bg-[#0d0d11] text-white transition-colors duration-300",
+    accent:
+      "bg-gradient-to-b from-[#1a1f3c] via-[#151828] to-[#121212] text-white transition-colors duration-300",
+    black: "bg-[#0d0d11] text-white transition-colors duration-300",
   };
 
   const widthClasses = {

@@ -6,8 +6,6 @@ import { ProjectCard } from "@/components/ProjectCard";
 import { projects } from "@/data/projects";
 import { cn } from "@/lib/utils";
 
-
-
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState("All");
 
@@ -17,35 +15,39 @@ export default function Projects() {
   const filteredProjects =
     activeCategory === "All"
       ? projects
-      : projects.filter((p) => Array.isArray(p.category) ? p.category.includes(activeCategory) : p.category === activeCategory);
+      : projects.filter((p) =>
+          Array.isArray(p.category)
+            ? p.category.includes(activeCategory)
+            : p.category === activeCategory
+        );
 
   return (
     <Layout>
       <section className="py-12 md:py-24 hero-gradient">
         <div className="container mx-auto px-4">
           <SectionHeading
-            badge="Case Studies & Products"
-            title="Our Work & Solutions"
-            description="Explore enterprise platforms, SaaS products, and custom digital solutions engineered by AfriNex Tech."
+            badge="Portfolio"
+            title="My Projects"
+            description="Explore my recent work and see how I bring ideas to life through code."
             align="center"
           />
 
-          {/* Filter */}
+          {/* Filter (micro1.ai tab style) */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="flex flex-wrap justify-center gap-4 mb-12"
+            className="flex flex-wrap justify-center gap-2.5 mb-12"
           >
             {uniqueCategories.map((category) => (
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
                 className={cn(
-                  "px-6 py-2 rounded-lg text-sm font-bold transition-all duration-300 border-2",
+                  "px-5 py-2 rounded-full text-xs sm:text-sm font-medium transition-all duration-200 border",
                   activeCategory === category
-                    ? "bg-primary border-primary text-white shadow-md scale-105"
-                    : "bg-white border-stax-light-gray text-stax-medium-gray hover:border-primary hover:text-primary dark:bg-transparent dark:border-gray-700 dark:text-gray-400 dark:hover:text-primary dark:hover:border-primary"
+                    ? "bg-[#3444da] border-[#6d7cff] text-white shadow-[0_0_20px_-4px_rgba(109,124,255,0.6)]"
+                    : "bg-[#191919] border-white/10 text-white/70 hover:border-[#6d7cff]/50 hover:text-white"
                 )}
               >
                 {category}
