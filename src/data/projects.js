@@ -59,7 +59,7 @@ export const projects = [
     ],
     "github": "https://github.com/davies-dev404/kenya-property-connect",
     "demo": "https://kenya-property-connect.vercel.app/",
-    "featured": false
+    "featured": true
   },
   {
     "id": 3,
@@ -102,24 +102,6 @@ export const projects = [
   },
   {
     "id": 5,
-    "title": "JengaWeb",
-    "description": "A digital showcase platform highlighting web development services and custom design solutions.",
-    "image": "/assets/jengaweb.png",
-    "stack": [
-      "HTML",
-      "CSS",
-      "JavaScript"
-    ],
-    "category": [
-      "Frontend",
-      "Portfolio"
-    ],
-    "github": "https://github.com/davies-dev404/JengaWeb",
-    "demo": "https://davies-dev404.github.io/JengaWeb/",
-    "featured": true
-  },
-  {
-    "id": 6,
     "title": "Hope Specialist Hospital",
     "description": "A comprehensive healthcare portal providing exceptional medical services, appointment booking, and patient care resources.",
     "image": "/assets/hope-specialist.png",
@@ -137,26 +119,7 @@ export const projects = [
     "featured": true
   },
   {
-    "id": 7,
-    "title": "EcoTrack",
-    "description": "Waste management platform for a greener future. Track recycling impact, schedule pickups, and join a sustainable community.",
-    "image": "/assets/eco-track-v2.png",
-    "stack": [
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB"
-    ],
-    "category": [
-      "Full Stack",
-      "Environmental"
-    ],
-    "github": "https://github.com/davies-dev404/Eco--Track",
-    "demo": "https://eco-track-3sic.vercel.app/",
-    "featured": true
-  },
-  {
-    "id": 8,
+    "id": 6,
     "title": "Sterling Law",
     "description": "Premium legal practice website built with React and Tailwind CSS. A demo website for a high-end law firm featuring modern design and smooth animations.",
     "image": "/assets/sterling-law.png",
@@ -174,25 +137,7 @@ export const projects = [
     "featured": true
   },
   {
-    "id": 9,
-    "title": "Velvet Motion - Noir",
-    "description": "A coffee shop experience featuring fluid animations and dark mode aesthetics. Every cup tells a story.",
-    "image": "/assets/velvet-motion.png",
-    "stack": [
-      "React",
-      "Framer Motion",
-      "Tailwind CSS"
-    ],
-    "category": [
-      "Frontend",
-      "E-commerce"
-    ],
-    "github": "https://github.com/davies-dev404/velvet-motion",
-    "demo": "https://velvet-motion-5fsx.vercel.app/",
-    "featured": true
-  },
-  {
-    "id": 10,
+    "id": 7,
     "title": "MakaziFlow – Property Management SaaS",
     "description": "Automated property & rental management software for landlords and real estate managers in Kenya—featuring M-Pesa rent reconciliation, invoicing, and tenant portals.",
     "image": "/assets/rental-manager.png",
@@ -211,26 +156,7 @@ export const projects = [
     "featured": true
   },
   {
-    "id": 11,
-    "title": "FoodShare App",
-    "description": "A community donation app helping users share excess food with nearby recipients and organizations.",
-    "image": "/assets/Jirani.png",
-    "stack": [
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB"
-    ],
-    "category": [
-      "Full Stack",
-      "Non-Profit"
-    ],
-    "github": "https://github.com/davies-dev404/Jirani_Eats",
-    "demo": "https://jirani-eats-five.vercel.app",
-    "featured": true
-  },
-  {
-    "id": 12,
+    "id": 8,
     "title": "E-Commerce Platform",
     "description": "A full-stack e-commerce solution with real-time inventory, payment processing, and admin dashboard.",
     "image": "/assets/ecom.png",
@@ -248,7 +174,7 @@ export const projects = [
     "featured": true
   },
   {
-    "id": 13,
+    "id": 9,
     "title": "Solar Impact",
     "description": "Solar energy monitoring dashboard with device tracking, energy analytics, and reporting.",
     "image": "/assets/solar.png",
@@ -267,7 +193,7 @@ export const projects = [
     "featured": true
   },
   {
-    "id": 14,
+    "id": 10,
     "title": "Kibet & Associates Advocates",
     "description": "Professional law firm website featuring service pages, booking, and contact automation.",
     "image": "/assets/law-firm.png",
@@ -282,25 +208,6 @@ export const projects = [
     ],
     "github": "https://github.com/davies-dev404/Law-Firm_",
     "demo": "https://davies-dev404.github.io/Law-Firm_/",
-    "featured": true
-  },
-  {
-    "id": 15,
-    "title": "Gulfstream – E-Recycle App",
-    "description": "Electronic waste recycling app enabling users to schedule pickups and track disposal progress.",
-    "image": "/assets/gulfstream.png",
-    "stack": [
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB"
-    ],
-    "category": [
-      "Full Stack",
-      "Environmental"
-    ],
-    "github": "https://github.com/davies-dev404/Gulfstream_",
-    "demo": "https://gulfstream-recycle.vercel.app",
     "featured": true
   }
 ];

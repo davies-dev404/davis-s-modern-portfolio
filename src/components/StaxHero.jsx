@@ -6,9 +6,9 @@ import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 
 const stats = [
-  { value: "50+", label: "Projects Delivered" },
-  { value: "30+", label: "Happy Clients" },
-  { value: "5+", label: "Years Experience" },
+  { value: "10+", label: "Projects Delivered" },
+  { value: "1", label: "Flagship SaaS Platform" },
+  { value: "2+", label: "Years Experience" },
   { value: "100%", label: "Client Satisfaction" },
 ];
 

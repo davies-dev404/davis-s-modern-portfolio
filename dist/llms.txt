@@ -11,7 +11,7 @@
 - **Email**: info@afrinextech.co.ke
 - **Phone / WhatsApp**: +254 790 264 792
 - **Education**: Bachelor of Science in Information Technology (BSc IT), Mount Kenya University; Software Development Alumnus, Power Learn Project (PLP) Africa
-- **Experience**: 5+ years of full-stack software development, 50+ projects delivered, 30+ happy clients
+- **Milestones**: 10+ projects delivered, 1 flagship SaaS platform (MakaziFlow), 2+ years of engineering experience, 100% client satisfaction
 
 ## Core Technical Stack & Skills
 - **Frontend**: React, TypeScript, JavaScript (ES6+), Next.js, Tailwind CSS, Framer Motion, HTML5, CSS3
@@ -33,7 +33,6 @@
 - **Kenya Property Connect (https://kenya-property-connect.vercel.app/)**: Real estate discovery platform covering all 47 counties in Kenya.
 - **TransCorp Logistics Hub (https://logistics-solutions-hub-fkr7.vercel.app/)**: East African logistics and fleet management platform.
 - **Hope Specialist Hospital (https://community-care-portal.vercel.app/)**: Healthcare portal with appointment booking and patient care resources.
-- **EcoTrack (https://eco-track-3sic.vercel.app/)**: Environmental waste management and recycling impact platform.
 - **Solar Impact (https://solar-impact.vercel.app)**: Solar energy analytics and device monitoring dashboard.
 
 ## Important URLs
