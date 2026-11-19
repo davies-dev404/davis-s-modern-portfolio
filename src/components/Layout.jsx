@@ -10,9 +10,9 @@ const ROUTE_SEO = {
       "AfriNex Tech is a software engineering & digital solutions company in Nairobi, Kenya. Creators of MakaziFlow SaaS, building React, Node.js, Python, and M-Pesa integrated web platforms.",
   },
   "/about": {
-    title: "About Davis Kibet Kipsoi | AfriNex Tech — Software Engineer & Full-Stack Developer",
+    title: "About AfriNex Tech | Software Engineering Company & Founder Davis Kibet Kipsoi",
     description:
-      "Learn about Davis Kibet Kipsoi, BSc IT graduate from Mount Kenya University, Power Learn Project Alumnus, and founder of AfriNex Tech in Nairobi, Kenya.",
+      "Learn about AfriNex Tech, a software engineering and digital solutions company in Nairobi, Kenya founded by Davis Kibet Kipsoi, creators of MakaziFlow SaaS.",
   },
   "/projects": {
     title: "Projects & Case Studies | AfriNex Tech — Davis Kibet Kipsoi",
