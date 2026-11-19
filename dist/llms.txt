@@ -20,11 +20,12 @@
 - **Design & Security**: UI/UX Design (Figma), Graphic Design, Application Security & OWASP Best Practices
 
 ## Services Offered (https://afrinextech.co.ke/services)
-1. **Web Application Development**: Custom, responsive, high-performance web applications built with React, Node.js, and modern full-stack architectures.
-2. **Backend & API Development**: Secure, scalable server-side systems, database architecture, M-Pesa payment gateways, and third-party API integrations.
-3. **UI/UX Design**: User-centered interface and experience design, wireframing, and interactive prototyping in Figma.
-4. **Graphic Design**: Brand identity, logos, marketing assets, and visual communication systems.
-5. **Basic Cybersecurity**: Web application security audits, SSL/TLS hardening, authentication security, and vulnerability remediation.
+1. **Custom Web & Enterprise Applications**: High-performance corporate portals, business management systems, and customer-facing web applications built with React, Next.js, TypeScript, and Node.js.
+2. **SaaS & Industry Management Systems**: Cloud-based SaaS platforms, property & real estate ERP systems (such as MakaziFlow), healthcare portals, POS/inventory systems, and logistics platforms.
+3. **M-Pesa, Payment & API Integrations**: Safaricom M-Pesa Daraja API integrations (STK Push, C2B Paybill/Till reconciliation, B2C payouts), card payment gateways, automated WhatsApp/SMS notifications, and custom REST/GraphQL APIs.
+4. **Mobile App & E-Commerce Solutions**: Cross-platform iOS & Android mobile applications, Progressive Web Apps (PWAs), and full-featured online stores with real-time inventory and instant checkout.
+5. **UI/UX, Product Design & Brand Identity**: User-centered product interfaces, interactive Figma prototypes, design systems, and corporate digital branding.
+6. **Cloud Hosting, DevOps & Cybersecurity**: Managed cloud deployment, CI/CD pipelines, domain & corporate email setup, SSL hardening, application security audits, and ongoing maintenance.
 
 ## Flagship SaaS & Notable Projects (https://afrinextech.co.ke/projects)
 - **MakaziFlow (https://makaziflow.afrinextech.co.ke)**: Automated property and rental management SaaS for Kenyan landlords and real estate agencies featuring M-Pesa Paybill reconciliation, automated WhatsApp/SMS rent reminders, digital leases, and water sub-meter billing.

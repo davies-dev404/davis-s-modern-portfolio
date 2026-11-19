@@ -21,11 +21,11 @@ const footerLinks = [
 ];
 
 const serviceLinks = [
-  { path: "/services", label: "Web App Development" },
-  { path: "/services", label: "Backend & API Dev" },
-  { path: "/services", label: "UI/UX Design" },
-  { path: "/services", label: "Graphic Design" },
-  { path: "/services", label: "Basic Cybersecurity" },
+  { path: "/services", label: "Custom Web & Enterprise Apps" },
+  { path: "/services", label: "SaaS & Management Systems" },
+  { path: "/services", label: "M-Pesa & API Integrations" },
+  { path: "/services", label: "Mobile Apps & E-Commerce" },
+  { path: "/services", label: "UI/UX & Cloud Security" },
 ];
 
 export function Footer() {
