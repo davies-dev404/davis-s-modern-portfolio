@@ -21,11 +21,11 @@ const footerLinks = [
 ];
 
 const serviceLinks = [
-  { path: "/services", label: "Custom Web & Enterprise Apps" },
-  { path: "/services", label: "SaaS & Management Systems" },
-  { path: "/services", label: "M-Pesa & API Integrations" },
-  { path: "/services", label: "Mobile Apps & E-Commerce" },
-  { path: "/services", label: "UI/UX & Cloud Security" },
+  { path: "/services/custom-web-enterprise-applications", label: "Custom Web & Enterprise Apps" },
+  { path: "/services/saas-industry-management-systems", label: "SaaS & Management Systems" },
+  { path: "/services/mpesa-payment-api-integrations", label: "M-Pesa & API Integrations" },
+  { path: "/services/mobile-app-ecommerce-solutions", label: "Mobile Apps & E-Commerce" },
+  { path: "/services/cloud-hosting-devops-cybersecurity", label: "UI/UX & Cloud Security" },
 ];
 
 export function Footer() {

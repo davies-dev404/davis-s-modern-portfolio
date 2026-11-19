@@ -4,8 +4,23 @@
 export const projects = [
   {
     "id": 0,
+    "slug": "ecasi-africa",
     "title": "ECASI Africa",
-    "description": "Official website for the Environmental Capacities and Sustainability Institute — an independent Pan-African think tank advancing sustainable development through research, policy advisory, and capacity strengthening across Africa.",
+    "client": "Environmental Capacities and Sustainability Institute",
+    "industry": "Policy Research & Sustainability",
+    "description": "Official web platform for the Environmental Capacities and Sustainability Institute, a Pan-African research and policy think tank advancing sustainable development across Africa.",
+    "overview": "ECASI Africa required an authoritative digital platform to publish policy research, coordinate regional capacity-building programs, and engage development partners across the African continent. AfriNex Tech engineered a fast, accessible web architecture tailored for research publications and institutional visibility.",
+    "deliverables": [
+      "Institutional Web Portal & Information Architecture",
+      "Research Publication & Policy Brief Repository",
+      "Program & Advisory Showcase Modules",
+      "Search Engine & Accessibility Optimization"
+    ],
+    "outcomes": [
+      "Unified Pan-African digital presence for policy stakeholders and researchers",
+      "Fast page loads across low-bandwidth and mobile connections",
+      "Clear navigation structure for multi-disciplinary sustainability programs"
+    ],
     "image": "/assets/ecasi.png",
     "stack": [
       "React",
@@ -24,8 +39,23 @@ export const projects = [
   },
   {
     "id": 1,
+    "slug": "ms-ochieng-law",
     "title": "MS Ochieng Law",
-    "description": "A modern, high-end legal practice platform for M. S. Ochieng Legal Advocates, featuring strategic legal consultations, expertise showcases, and interactive service charters.",
+    "client": "M. S. Ochieng Legal Advocates",
+    "industry": "Legal & Corporate Advisory",
+    "description": "A corporate legal practice platform for M. S. Ochieng Legal Advocates, featuring practice area charters, attorney profiles, and client consultation workflows.",
+    "overview": "M. S. Ochieng Legal Advocates needed a modern digital presence that reflects courtroom authority and corporate professionalism while making it simple for corporate and individual clients to book legal consultations online.",
+    "deliverables": [
+      "Corporate Law Firm Web Platform",
+      "Practice Area & Legal Charter Modules",
+      "Online Consultation & Client Intake Flow",
+      "Responsive Mobile-First Typography & Layout"
+    ],
+    "outcomes": [
+      "Streamlined online consultation inquiries for corporate and private clients",
+      "Clear presentation of legal practice areas and service charters",
+      "Executive visual identity aligned with top-tier Kenyan legal practices"
+    ],
     "image": "/assets/ms-ochieng-law.png",
     "stack": [
       "React",
@@ -43,8 +73,23 @@ export const projects = [
   },
   {
     "id": 2,
+    "slug": "kenya-property-connect",
     "title": "Kenya Property Connect",
-    "description": "Kenya's premier real estate platform connecting families and investors with quality homes, land, and luxury estates across all 47 counties.",
+    "client": "Kenya Property Connect",
+    "industry": "Real Estate & Property Discovery",
+    "description": "Real estate marketplace connecting home buyers, tenants, and investors with verified residential and commercial listings across all 47 counties in Kenya.",
+    "overview": "Kenya Property Connect bridges the gap between property developers, real estate agents, and buyers by offering a structured property discovery portal with county-by-county filtering, high-resolution galleries, and direct agent inquiry routing.",
+    "deliverables": [
+      "Multi-County Property Listing & Discovery Portal",
+      "Advanced Search by County, Budget & Property Type",
+      "Property Detail Pages with Direct Inquiry Routing",
+      "High-Speed Image Delivery & SEO Indexing"
+    ],
+    "outcomes": [
+      "Nationwide coverage across all 47 Kenyan counties",
+      "Intuitive filtering that reduces property search time for buyers",
+      "Direct lead generation channel for real estate agencies and developers"
+    ],
     "image": "/assets/kenya-property-connect.png",
     "stack": [
       "React",
@@ -63,8 +108,23 @@ export const projects = [
   },
   {
     "id": 3,
+    "slug": "transcorp-logistics-hub",
     "title": "TransCorp Logistics Hub",
-    "description": "A premium, high-performance logistics and transport management platform designed for the East African market.",
+    "client": "TransCorp East Africa",
+    "industry": "Logistics & Supply Chain",
+    "description": "A freight, fleet, and supply-chain operations platform built for cross-border transport and cargo management across East Africa.",
+    "overview": "TransCorp Logistics Hub provides commercial shippers and fleet operators with a centralized web portal to request freight quotes, monitor corridor operations, and manage regional supply-chain workflows.",
+    "deliverables": [
+      "Freight & Fleet Operations Web Portal",
+      "Interactive Service Corridor & Cargo Modules",
+      "Instant Freight Quote Request System",
+      "Performance-Tuned Dashboard Interface"
+    ],
+    "outcomes": [
+      "Faster freight quotation turnaround for commercial clients",
+      "Clear visibility into regional transport corridors and fleet capabilities",
+      "Reliable access for field and office operations teams"
+    ],
     "image": "/assets/transcorp-logistics.png",
     "stack": [
       "React",
@@ -83,8 +143,23 @@ export const projects = [
   },
   {
     "id": 4,
+    "slug": "luminary-strategic-impact",
     "title": "Luminary Strategic Impact",
-    "description": "A premier strategic communications platform designed to showcase agency mission, leadership, and service portfolio with narrative-driven design.",
+    "client": "Luminary Communications Advisory",
+    "industry": "Strategic Communications & Advisory",
+    "description": "Corporate advisory and public affairs platform showcasing executive communications, stakeholder engagement, and campaign case studies.",
+    "overview": "Luminary Strategic Impact required an editorial-grade web platform to present its public affairs advisory services, leadership team, and regional impact portfolio to corporate and institutional clients.",
+    "deliverables": [
+      "Editorial Corporate Web Platform",
+      "Case Study & Impact Portfolio Architecture",
+      "Executive Leadership & Advisory Modules",
+      "Custom Motion & Typography System"
+    ],
+    "outcomes": [
+      "Stronger positioning for institutional and corporate advisory bids",
+      "Clean, distraction-free reading experience for executive decision-makers",
+      "Fully responsive layout across tablets, laptops, and mobile devices"
+    ],
     "image": "/assets/strategic-impact.png",
     "stack": [
       "React",
@@ -102,8 +177,23 @@ export const projects = [
   },
   {
     "id": 5,
+    "slug": "hope-specialist-hospital",
     "title": "Hope Specialist Hospital",
-    "description": "A comprehensive healthcare portal providing exceptional medical services, appointment booking, and patient care resources.",
+    "client": "Hope Specialist Medical Centre",
+    "industry": "Healthcare & Clinical Services",
+    "description": "A digital healthcare portal providing patient appointment booking, specialist department directories, and clinical care information.",
+    "overview": "Hope Specialist Hospital needed a patient-friendly web portal that simplifies outpatient appointment scheduling, highlights specialist clinics, and provides immediate access to emergency and clinical contact channels.",
+    "deliverables": [
+      "Patient Appointment & Clinic Booking Portal",
+      "Medical Specialties & Doctor Directory",
+      "Patient Resources & Emergency Contact Hub",
+      "Accessible, Mobile-Responsive Healthcare UI"
+    ],
+    "outcomes": [
+      "Reduced front-desk phone bottlenecks through online appointment requests",
+      "Easy navigation for patients seeking specialist clinics and operating hours",
+      "Trustworthy clinical presentation on both mobile and desktop"
+    ],
     "image": "/assets/hope-specialist.png",
     "stack": [
       "React",
@@ -120,8 +210,23 @@ export const projects = [
   },
   {
     "id": 6,
+    "slug": "sterling-law",
     "title": "Sterling Law",
-    "description": "Premium legal practice website built with React and Tailwind CSS. A demo website for a high-end law firm featuring modern design and smooth animations.",
+    "client": "Sterling Legal Practice",
+    "industry": "Commercial & Litigation Law",
+    "description": "Digital platform for a commercial law firm featuring practice area briefings, partner profiles, and structured client inquiry workflows.",
+    "overview": "Sterling Law was designed to give commercial law partners a modern, high-converting digital storefront that communicates credibility and simplifies client onboarding.",
+    "deliverables": [
+      "Commercial Law Firm Web Architecture",
+      "Partner & Practice Area Showcase",
+      "Client Consultation Scheduling Workflow",
+      "High-Contrast Executive UI Design"
+    ],
+    "outcomes": [
+      "Clear differentiation across corporate, real estate, and litigation practice areas",
+      "Direct online inquiry routing to legal partners",
+      "Fast, reliable browsing experience across all devices"
+    ],
     "image": "/assets/sterling-law.png",
     "stack": [
       "React",
@@ -138,9 +243,25 @@ export const projects = [
   },
   {
     "id": 7,
+    "slug": "makaziflow-saas",
     "title": "MakaziFlow – Property Management SaaS",
-    "description": "Automated property & rental management software for landlords and real estate managers in Kenya—featuring M-Pesa rent reconciliation, invoicing, and tenant portals.",
-    "image": "/assets/rental-manager.png",
+    "client": "AfriNex Tech Flagship Product",
+    "industry": "PropTech & FinTech SaaS",
+    "description": "Automated property and rental management SaaS for landlords and real estate agencies in Kenya, featuring M-Pesa Daraja reconciliation, invoicing, and tenant portals.",
+    "overview": "Built and operated by AfriNex Tech, MakaziFlow eliminates manual rent tracking and fake M-Pesa receipt disputes for Kenyan landlords and property managers. The platform integrates directly with Safaricom M-Pesa Paybill/Till APIs, automates WhatsApp and SMS tenant reminders, generates compliant Kenyan PDF tenancy leases, and calculates water sub-meter billing.",
+    "deliverables": [
+      "Multi-Tenant Property & Unit Management ERP",
+      "Safaricom M-Pesa Daraja Paybill & STK Push Integration",
+      "Automated WhatsApp & Branded SMS Rent Reminders",
+      "Digital Kenyan Tenancy Leases & Water Sub-Meter Billing",
+      "Landlord, Caretaker & Tenant Self-Service Portals"
+    ],
+    "outcomes": [
+      "Real-time M-Pesa rent reconciliation with zero manual spreadsheet entry",
+      "Automated digital receipts and arrears statements sent directly to tenants",
+      "Audit-ready financial reporting for landlords and managing agencies"
+    ],
+    "image": "/assets/makaziflow-hero.jpg",
     "stack": [
       "React",
       "Node.js",
@@ -157,8 +278,23 @@ export const projects = [
   },
   {
     "id": 8,
+    "slug": "e-commerce-platform",
     "title": "E-Commerce Platform",
-    "description": "A full-stack e-commerce solution with real-time inventory, payment processing, and admin dashboard.",
+    "client": "Retail & Artisan Commerce",
+    "industry": "Retail & E-Commerce",
+    "description": "A full-stack online store with real-time product inventory, cart management, digital payment checkout, and merchant order administration.",
+    "overview": "Designed for growing retail brands, this full-stack e-commerce solution combines a clean customer storefront with a structured merchant backend for managing catalog items, stock levels, and digital payments.",
+    "deliverables": [
+      "Customer Storefront & Product Catalog",
+      "Shopping Cart & Instant Digital Checkout",
+      "Inventory & Order Management System",
+      "Mobile-Optimized Shopping Experience"
+    ],
+    "outcomes": [
+      "Smooth browsing-to-checkout flow on both mobile phones and desktops",
+      "Centralized product and order tracking for store administrators",
+      "Scalable catalog structure ready for expanding product lines"
+    ],
     "image": "/assets/ecom.png",
     "stack": [
       "React",
@@ -175,8 +311,23 @@ export const projects = [
   },
   {
     "id": 9,
+    "slug": "solar-impact",
     "title": "Solar Impact",
-    "description": "Solar energy monitoring dashboard with device tracking, energy analytics, and reporting.",
+    "client": "Solar Impact Energy",
+    "industry": "Renewable Energy & IoT Telemetry",
+    "description": "Solar energy monitoring dashboard with connected device tracking, power generation analytics, and operational reporting.",
+    "overview": "Solar Impact provides renewable energy operators and commercial clients with a centralized web dashboard to monitor solar installation output, track device health, and review energy savings over time.",
+    "deliverables": [
+      "Energy Telemetry & Analytics Dashboard",
+      "Connected Solar Device Status Monitoring",
+      "Historical Generation & Efficiency Reports",
+      "Role-Based Operator Interface"
+    ],
+    "outcomes": [
+      "Clear visual tracking of solar generation metrics and system uptime",
+      "Faster identification of underperforming inverters or site equipment",
+      "Exportable reporting for energy audits and client briefings"
+    ],
     "image": "/assets/solar.png",
     "stack": [
       "React",
@@ -194,8 +345,23 @@ export const projects = [
   },
   {
     "id": 10,
+    "slug": "kibet-associates-advocates",
     "title": "Kibet & Associates Advocates",
-    "description": "Professional law firm website featuring service pages, booking, and contact automation.",
+    "client": "Kibet & Associates Advocates",
+    "industry": "Legal Services",
+    "description": "Professional law firm website featuring legal service directories, consultation booking, and automated client inquiry handling.",
+    "overview": "Kibet & Associates Advocates needed a clean, dependable web presence to introduce their legal team, outline core practice areas, and capture prospective client inquiries.",
+    "deliverables": [
+      "Law Firm Corporate Website",
+      "Legal Practice Area Directory",
+      "Client Consultation & Contact Automation",
+      "Fast, Mobile-Friendly Layout"
+    ],
+    "outcomes": [
+      "Accessible legal information for prospective clients",
+      "Direct online appointment and inquiry submission",
+      "Clean, professional presentation across all screen sizes"
+    ],
     "image": "/assets/law-firm.png",
     "stack": [
       "HTML",

@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight, Briefcase, Layers, Github, Linkedin, Mail, Sparkles } from "lucide-react";
+import { ArrowRight, Briefcase, Layers, Github, Linkedin, Mail } from "lucide-react";
 import { XIcon } from "@/components/XIcon";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
@@ -202,7 +202,6 @@ export function StaxHero() {
                       <div className="w-3 h-3 rounded-full bg-green-500/90" />
                     </div>
                     <span className="text-xs font-mono text-white/50 flex items-center gap-1.5">
-                      <Sparkles className="w-3 h-3 text-[#6d7cff]" />
                       afrinex.config.ts • AfriNex Tech
                     </span>
                   </div>

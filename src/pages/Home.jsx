@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight, ExternalLink, ChevronRight, Sparkles, Info } from "lucide-react";
+import { ArrowRight, ExternalLink, ChevronRight, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/Layout";
 import { ProjectCard } from "@/components/ProjectCard";
@@ -70,7 +70,6 @@ export default function Home() {
           transition={{ duration: 0.6 }}
         >
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.06] border border-white/10 text-xs font-medium text-[#a0b3ff] mb-5">
-            <Sparkles className="w-3.5 h-3.5 text-[#6d7cff]" />
             AfriNex Tech • Full-Stack Engineering
           </span>
           <h2 className="font-display font-semibold text-4xl sm:text-5xl md:text-6xl text-color-gradient-accent mb-4 leading-tight">

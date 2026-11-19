@@ -1,11 +1,13 @@
 import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
+import { ArrowRight, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { useRef, useState } from "react";
 
 export function ProjectCard({ project, index }) {
   const cardRef = useRef(null);
   const [loaded, setLoaded] = useState(false);
+  const detailPath = `/projects/${project.slug || project.id}`;
 
   return (
     <motion.article
@@ -16,8 +18,11 @@ export function ProjectCard({ project, index }) {
       transition={{ duration: 0.4, delay: Math.min(index * 0.06, 0.3) }}
       className="organic-block flex flex-col h-full group"
     >
-      {/* Fast-Loading Image Container */}
-      <div className="relative h-48 -mx-7 -mt-7 mb-6 overflow-hidden rounded-t-2xl border-b border-white/[0.08] bg-[#141418]">
+      {/* Image Container */}
+      <Link
+        to={detailPath}
+        className="relative block h-48 -mx-7 -mt-7 mb-6 overflow-hidden rounded-t-2xl border-b border-white/[0.08] bg-[#141418]"
+      >
         {!loaded && (
           <div className="absolute inset-0 animate-pulse bg-gradient-to-r from-[#141418] via-[#1f1f27] to-[#141418]" />
         )}
@@ -34,43 +39,52 @@ export function ProjectCard({ project, index }) {
             loaded ? "opacity-100" : "opacity-0"
           }`}
         />
-      </div>
+      </Link>
 
-      {/* Content */}
-      <h3 className="font-display font-medium text-xl text-white mb-2.5 group-hover:text-[#a0b3ff] transition-colors">
-        {project.title}
-      </h3>
+      {/* Industry Tag */}
+      {project.industry && (
+        <span className="text-[11px] font-mono uppercase tracking-wider text-[#a0b3ff] mb-1.5">
+          {project.industry}
+        </span>
+      )}
 
+      {/* Title */}
+      <Link to={detailPath}>
+        <h3 className="font-display font-medium text-xl text-white mb-2.5 group-hover:text-[#a0b3ff] transition-colors">
+          {project.title}
+        </h3>
+      </Link>
+
+      {/* Description */}
       <p className="font-sans text-white/65 text-sm mb-6 flex-grow leading-relaxed">
         {project.description}
       </p>
 
-      {/* Tech Stack */}
-      <div className="flex flex-wrap gap-2 mb-6">
-        {project.stack.map((tech) => (
-          <span
-            key={tech}
-            className="px-2.5 py-1 text-xs font-mono font-medium bg-white/[0.05] text-[#a0b3ff] border border-white/[0.08] rounded-md"
-          >
-            {tech}
-          </span>
-        ))}
-      </div>
+      {/* Actions: Dedicated Project Detail Page + Optional Live Site Link */}
+      <div className="flex items-center gap-3 mt-auto pt-2 border-t border-white/[0.07]">
+        <Button
+          size="sm"
+          asChild
+          className="flex-1 bg-[#3444da] text-white hover:bg-[#4f69d4] rounded-full font-display font-medium text-xs shadow-md shadow-[#3444da]/25"
+        >
+          <Link to={detailPath}>
+            View Details <ArrowRight className="ml-1.5 h-3.5 w-3.5" />
+          </Link>
+        </Button>
 
-      {/* Action (Live Demo only — GitHub link removed per request) */}
-      {project.demo && (
-        <div className="flex items-center mt-auto">
+        {project.demo && (
           <Button
+            variant="outline"
             size="sm"
             asChild
-            className="w-full bg-[#3444da] text-white hover:bg-[#4f69d4] rounded-full font-display font-medium text-xs shadow-md shadow-[#3444da]/25"
+            className="border-white/15 bg-white/[0.03] text-white/80 hover:bg-white/[0.09] hover:text-white rounded-full font-display font-medium text-xs px-4"
           >
             <a href={project.demo} target="_blank" rel="noopener noreferrer">
-              <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
+              Live Site <ExternalLink className="ml-1.5 h-3.5 w-3.5" />
             </a>
           </Button>
-        </div>
-      )}
+        )}
+      </div>
     </motion.article>
   );
 }

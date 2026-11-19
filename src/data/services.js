@@ -10,6 +10,7 @@ import {
 export const services = [
   {
     id: 1,
+    slug: "custom-web-enterprise-applications",
     title: "Custom Web & Enterprise Applications",
     description:
       "Designing and engineering high-performance corporate portals, business management systems, and customer-facing web applications built to scale.",
@@ -39,6 +40,7 @@ export const services = [
   },
   {
     id: 2,
+    slug: "saas-industry-management-systems",
     title: "SaaS & Industry Management Systems",
     description:
       "Building cloud-based SaaS platforms, property & real estate ERP systems (like MakaziFlow), healthcare portals, POS, and logistics platforms.",
@@ -68,6 +70,7 @@ export const services = [
   },
   {
     id: 3,
+    slug: "mpesa-payment-api-integrations",
     title: "M-Pesa, Payment & API Integrations",
     description:
       "Seamless integration of Safaricom M-Pesa Daraja (Paybill, Till, STK Push), card payment gateways, SMS/WhatsApp alerts, and custom REST APIs.",
@@ -97,6 +100,7 @@ export const services = [
   },
   {
     id: 4,
+    slug: "mobile-app-ecommerce-solutions",
     title: "Mobile App & E-Commerce Solutions",
     description:
       "Developing cross-platform iOS & Android mobile applications and full-featured online stores with real-time inventory and instant checkout.",
@@ -126,6 +130,7 @@ export const services = [
   },
   {
     id: 5,
+    slug: "ui-ux-product-design-brand-identity",
     title: "UI/UX, Product Design & Brand Identity",
     description:
       "Crafting intuitive product interfaces, interactive Figma prototypes, design systems, and cohesive digital brand identities that convert visitors.",
@@ -154,6 +159,7 @@ export const services = [
   },
   {
     id: 6,
+    slug: "cloud-hosting-devops-cybersecurity",
     title: "Cloud Hosting, DevOps & Cybersecurity",
     description:
       "Managed cloud deployment, CI/CD pipelines, domain & business email setup, SSL hardening, application security audits, and ongoing maintenance.",
