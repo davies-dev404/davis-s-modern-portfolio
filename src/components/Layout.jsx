@@ -5,9 +5,9 @@ import { Footer } from "@/components/Footer";
 
 const ROUTE_SEO = {
   "/": {
-    title: "AfriNex Tech | Davis Kibet Kipsoi — Software Engineer & Full-Stack Developer in Kenya",
+    title: "AfriNex Tech | Software Engineering & Digital Solutions Company in Nairobi, Kenya",
     description:
-      "AfriNex Tech is the digital solutions studio & engineering portfolio of Davis Kibet Kipsoi, a Software Engineer & Full-Stack Developer in Nairobi, Kenya. Creator of MakaziFlow SaaS, building React, Node.js, Python, and M-Pesa integrated web platforms.",
+      "AfriNex Tech is a software engineering & digital solutions company in Nairobi, Kenya. Creators of MakaziFlow SaaS, building React, Node.js, Python, and M-Pesa integrated web platforms.",
   },
   "/about": {
     title: "About Davis Kibet Kipsoi | AfriNex Tech — Software Engineer & Full-Stack Developer",

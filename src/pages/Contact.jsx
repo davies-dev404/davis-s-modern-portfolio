@@ -23,7 +23,7 @@ const contactInfo = [
     icon: MapPin,
     label: "Location",
     value: "Nairobi, Kenya",
-    href: null,
+    href: "https://www.google.com/maps/search/?api=1&query=Nairobi%2C+Kenya",
   },
 ];
 
@@ -42,7 +42,7 @@ export default function Contact() {
           <SectionHeading
             badge="Contact"
             title="Get in Touch"
-            description="Have a project in mind? Let's talk about how I can help."
+            description="Have a project in mind? Let's talk about how AfriNex Tech can help."
             align="center"
           />
 
@@ -90,7 +90,7 @@ export default function Contact() {
                 transition={{ delay: 0.3 }}
                 className="organic-block p-6"
               >
-                <h3 className="font-display font-medium text-lg text-white mb-4">Connect With Me</h3>
+                <h3 className="font-display font-medium text-lg text-white mb-4">Connect With AfriNex Tech</h3>
                 <div className="flex gap-3">
                   {socialLinks.map((link) => (
                     <Button

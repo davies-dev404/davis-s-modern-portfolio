@@ -52,7 +52,7 @@ export default function Services() {
             </div>
 
             <h1 className="font-display font-semibold text-4xl sm:text-5xl md:text-6xl tracking-tight text-white mb-4">
-              What I <span className="text-color-gradient-accent">Offer</span>
+              What We <span className="text-color-gradient-accent">Offer</span>
             </h1>
 
             <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">

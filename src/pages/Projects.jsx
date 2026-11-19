@@ -27,8 +27,8 @@ export default function Projects() {
         <div className="container mx-auto px-4">
           <SectionHeading
             badge="Portfolio"
-            title="My Projects"
-            description="Explore my recent work and see how I bring ideas to life through code."
+            title="Our Projects"
+            description="Explore our recent work and see how AfriNex Tech brings ideas to life through code."
             align="center"
           />
 

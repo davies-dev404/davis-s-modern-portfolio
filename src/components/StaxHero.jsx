@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight, Download, Briefcase, Github, Linkedin, Mail, Sparkles } from "lucide-react";
+import { ArrowRight, Briefcase, Layers, Github, Linkedin, Mail, Sparkles } from "lucide-react";
 import { XIcon } from "@/components/XIcon";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
@@ -21,9 +21,8 @@ export function StaxHero() {
 
   const heroY = useTransform(scrollYProgress, [0, 1], [0, 80]);
 
-  const personalInfo = {
-    tagline: "Building digital products, brands, and experiences",
-    resumeUrl: "/assets/DAVIS%20KIBET%20KIPSOI%20cv%20%20full%20stack.pdf",
+  const companyInfo = {
+    tagline: "Building digital products, brands, and enterprise experiences",
   };
 
   const socialLinks = [
@@ -58,10 +57,10 @@ export function StaxHero() {
         <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-white/15 to-transparent" />
       </div>
 
-      {/* Main Hero Content (Original Portfolio Copy + Floating Code Window Visible on Mobile & Desktop) */}
+      {/* Main Hero Content (AfriNex Tech Business Copy + Floating Code Window Visible on Mobile & Desktop) */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 pt-12 sm:pt-16 pb-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          {/* Left Column: Original Portfolio Introduction */}
+          {/* Left Column: AfriNex Tech Business Introduction */}
           <div className="order-1">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -71,7 +70,7 @@ export function StaxHero() {
             >
               <span className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/[0.06] border border-white/15 text-white/90 text-xs sm:text-sm font-medium backdrop-blur-md">
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                AfriNex Tech • Available for opportunities
+                AfriNex Tech • Digital Solutions &amp; Software Engineering
               </span>
             </motion.div>
 
@@ -82,7 +81,7 @@ export function StaxHero() {
                 transition={{ delay: 0.25, duration: 0.45 }}
                 className="block text-white"
               >
-                Hi, I&apos;m Davis —
+                AfriNex Tech —
               </motion.span>
               <motion.span
                 initial={{ opacity: 0, y: 20 }}
@@ -90,7 +89,7 @@ export function StaxHero() {
                 transition={{ delay: 0.4, duration: 0.45 }}
                 className="block text-color-gradient-accent"
               >
-                Software Engineer
+                Software Engineering
               </motion.span>
               <motion.span
                 initial={{ opacity: 0, y: 20 }}
@@ -98,7 +97,7 @@ export function StaxHero() {
                 transition={{ delay: 0.55, duration: 0.45 }}
                 className="block text-white/90"
               >
-                &amp; Full-Stack Dev
+                &amp; Digital Solutions
               </motion.span>
             </h1>
 
@@ -108,10 +107,10 @@ export function StaxHero() {
               transition={{ delay: 0.7, duration: 0.45 }}
               className="text-white/65 text-base sm:text-lg md:text-xl max-w-xl mb-8 font-sans leading-relaxed"
             >
-              {personalInfo.tagline}. Founder of <strong className="text-white font-medium">AfriNex Tech</strong> — crafting elegant digital solutions with modern technologies and turning complex ideas into seamless user experiences.
+              {companyInfo.tagline}. At <strong className="text-white font-medium">AfriNex Tech</strong>, we craft scalable web applications, SaaS platforms like <strong className="text-white font-medium">MakaziFlow</strong>, and custom API integrations that turn complex business challenges into seamless digital experiences.
             </motion.p>
 
-            {/* Portfolio CTA Buttons (Hire Me + Download CV) */}
+            {/* Business CTA Buttons (Start a Project + Explore Solutions) */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -126,7 +125,7 @@ export function StaxHero() {
                 <Link to="/contact">
                   <span className="flex items-center gap-2">
                     <Briefcase className="w-4 h-4 sm:w-5 sm:h-5" />
-                    Hire Me
+                    Start a Project
                     <ArrowRight className="w-4 h-4" />
                   </span>
                 </Link>
@@ -138,12 +137,12 @@ export function StaxHero() {
                 asChild
                 className="rounded-full font-medium text-sm h-12 sm:h-14 px-7 sm:px-8 border border-white/15 bg-[#25252e]/80 text-white hover:bg-white hover:text-[#121212] transition-all duration-300"
               >
-                <a href={personalInfo.resumeUrl} download="Davis_Kibet_CV.pdf">
+                <Link to="/projects">
                   <span className="flex items-center gap-2">
-                    <Download className="w-4 h-4 sm:w-5 sm:h-5" />
-                    Download CV
+                    <Layers className="w-4 h-4 sm:w-5 sm:h-5" />
+                    Explore Solutions
                   </span>
-                </a>
+                </Link>
               </Button>
             </motion.div>
 
@@ -155,7 +154,7 @@ export function StaxHero() {
               className="flex items-center gap-3.5 flex-wrap"
             >
               <span className="text-xs uppercase tracking-widest text-white/50 font-medium">
-                Find me on
+                Connect with us
               </span>
               {socialLinks.map((social) => {
                 const IconComponent = social.icon;
@@ -176,7 +175,7 @@ export function StaxHero() {
             </motion.div>
           </div>
 
-          {/* Right Column: Original Developer Code Window (Visible on Mobile & Desktop) */}
+          {/* Right Column: AfriNex Tech Code Window (Visible on Mobile & Desktop) */}
           <div className="order-2 relative block perspective-1000 w-full max-w-md mx-auto lg:max-w-none lg:mx-0">
             <motion.div
               initial={{ opacity: 0, y: 24 }}
@@ -204,50 +203,50 @@ export function StaxHero() {
                     </div>
                     <span className="text-xs font-mono text-white/50 flex items-center gap-1.5">
                       <Sparkles className="w-3 h-3 text-[#6d7cff]" />
-                      developer.ts • AfriNex Tech
+                      afrinex.config.ts • AfriNex Tech
                     </span>
                   </div>
 
-                  {/* Original Developer Code Content */}
+                  {/* Business Code Window Content */}
                   <div className="font-mono text-xs sm:text-sm leading-relaxed">
                     <div className="text-white/80 mb-1.5">
                       <span className="text-[#6d7cff] font-semibold">const</span>{" "}
-                      <span className="text-white font-bold">developer</span> = {"{"}
+                      <span className="text-white font-bold">afrinexTech</span> = {"{"}
                     </div>
                     <div className="pl-4 text-white/80">
-                      <span className="text-emerald-400">name</span>:{" "}
-                      <span className="text-amber-300">&apos;Davis Kipsoi&apos;</span>,
-                    </div>
-                    <div className="pl-4 text-white/80">
-                      <span className="text-emerald-400">brand</span>:{" "}
+                      <span className="text-emerald-400">company</span>:{" "}
                       <span className="text-amber-300">&apos;AfriNex Tech&apos;</span>,
                     </div>
                     <div className="pl-4 text-white/80">
-                      <span className="text-emerald-400">role</span>:{" "}
-                      <span className="text-amber-300">&apos;Full-Stack Dev&apos;</span>,
+                      <span className="text-emerald-400">focus</span>:{" "}
+                      <span className="text-amber-300">&apos;Digital Solutions&apos;</span>,
                     </div>
                     <div className="pl-4 text-white/80">
-                      <span className="text-emerald-400">skills</span>: [
+                      <span className="text-emerald-400">flagship</span>:{" "}
+                      <span className="text-amber-300">&apos;MakaziFlow SaaS&apos;</span>,
+                    </div>
+                    <div className="pl-4 text-white/80">
+                      <span className="text-emerald-400">stack</span>: [
                     </div>
                     <div className="pl-8 text-white/80">
                       <span className="text-amber-300">&apos;React&apos;</span>,{" "}
                       <span className="text-amber-300">&apos;Node.js&apos;</span>,
                     </div>
                     <div className="pl-8 text-white/80">
-                      <span className="text-amber-300">&apos;JavaScript&apos;</span>,{" "}
-                      <span className="text-amber-300">&apos;TypeScript&apos;</span>,
+                      <span className="text-amber-300">&apos;TypeScript&apos;</span>,{" "}
+                      <span className="text-amber-300">&apos;Python&apos;</span>,
                     </div>
                     <div className="pl-8 text-white/80">
-                      <span className="text-amber-300">&apos;Python&apos;</span>
+                      <span className="text-amber-300">&apos;Cloud &amp; APIs&apos;</span>
                     </div>
                     <div className="pl-4 text-white/80">],</div>
                     <div className="pl-4 text-white/80">
-                      <span className="text-emerald-400">passion</span>:{" "}
+                      <span className="text-emerald-400">enterpriseReady</span>:{" "}
                       <span className="text-[#6d7cff] font-semibold">true</span>
                     </div>
                     <div className="text-white/80">{"};"}</div>
                     <div className="mt-3 pt-2.5 border-t border-white/10 flex items-center gap-1.5 text-xs text-[#a0b3ff]">
-                      <span>&gt; Ready to build...</span>
+                      <span>&gt; Ready to scale your business...</span>
                       <span className="animate-pulse font-bold text-[#6d7cff]">_</span>
                     </div>
                   </div>

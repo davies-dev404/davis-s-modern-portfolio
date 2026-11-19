@@ -40,7 +40,7 @@ export function Footer() {
               <AfriNexLogo />
             </Link>
             <p className="text-white/60 text-xs sm:text-sm leading-relaxed">
-              Software Engineer &amp; Full-Stack Developer crafting modern web applications, APIs, and digital solutions under AfriNex Tech.
+              AfriNex Tech is a software engineering &amp; digital solutions company in Nairobi, Kenya — crafting modern web applications, SaaS platforms like MakaziFlow, and scalable APIs.
             </p>
             <div className="flex items-center gap-2 pt-1">
               {socialLinks.map((link) => (
@@ -109,10 +109,15 @@ export function Footer() {
                 Get in Touch
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-2">
-                <div className="flex items-center gap-2 text-white/70 text-xs sm:text-sm">
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Nairobi%2C+Kenya"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-white/70 hover:text-white transition-colors text-xs sm:text-sm"
+                >
                   <MapPin className="h-3.5 w-3.5 text-[#6d7cff] shrink-0" />
                   Nairobi, Kenya
-                </div>
+                </a>
                 <a
                   href="tel:+254790264792"
                   className="flex items-center gap-2 text-white/70 hover:text-white transition-colors text-xs sm:text-sm"
@@ -152,7 +157,7 @@ export function Footer() {
             © {new Date().getFullYear()} AfriNex Tech. All rights reserved.
           </p>
           <p className="text-white/40 text-[11px]">
-            Davis Kibet Kipsoi • AfriNex Tech Digital Solutions
+            Nairobi, Kenya • AfriNex Tech Digital Solutions
           </p>
         </div>
       </div>

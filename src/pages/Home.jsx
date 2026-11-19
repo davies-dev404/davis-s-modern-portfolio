@@ -81,7 +81,7 @@ export default function Home() {
             <strong className="text-white font-semibold">AFRINEX TECH</strong>
           </h3>
           <p className="font-sans text-base md:text-lg text-white/60 max-w-2xl mx-auto leading-relaxed">
-            I provide complete control over your entire web presence. From global fonts and colors to custom headers, APIs, and full-stack layouts. The possibilities are truly endless when you have a dedicated Full-Stack Developer.
+            We provide complete control over your entire digital presence. From custom web applications and enterprise UI systems to M-Pesa integrations, APIs, and scalable cloud architectures — the possibilities are endless with AfriNex Tech.
           </p>
         </motion.div>
       </StaxSection>
@@ -240,13 +240,13 @@ export default function Home() {
 
             <div className="mt-7 pt-5 border-t border-white/10 flex justify-between items-center">
               <span className="text-xs text-white/50">
-                Full-Stack Portfolio • Davis Kibet Kipsoi
+                Full-Stack Engineering • AfriNex Tech
               </span>
               <Link
-                to="/about"
+                to="/services"
                 className="inline-flex items-center gap-1.5 text-xs font-medium text-[#a0b3ff] hover:text-white transition-colors"
               >
-                <span>View full skills &amp; CV</span>
+                <span>Explore all services &amp; capabilities</span>
                 <ChevronRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -304,7 +304,7 @@ export default function Home() {
             Let&apos;s Build <span className="text-color-gradient-accent">Something Amazing</span>
           </h2>
           <p className="font-sans text-base md:text-lg text-white/65 mb-10 leading-relaxed">
-            Have a project in mind? I&apos;d love to hear about it. Whether it&apos;s a new application, a website redesign, or technical consulting, I&apos;m here to help you achieve your digital goals.
+            Have a project in mind? We&apos;d love to hear about it. Whether it&apos;s a custom web application, a SaaS platform, a website redesign, or technical consulting, AfriNex Tech is ready to help you achieve your digital goals.
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4">
@@ -321,7 +321,7 @@ export default function Home() {
               className="rounded-full font-medium px-8 py-6 border border-white/15 bg-[#25252e]/80 text-white hover:bg-white hover:text-[#121212]"
             >
               <a href="https://wa.me/254790264792" target="_blank" rel="noopener noreferrer">
-                WhatsApp Me
+                Chat on WhatsApp
               </a>
             </Button>
           </div>
